@@ -1,0 +1,17 @@
+{
+  "name": "aws-ai-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tests the AWS AI Service: Comprehend",
+  "author": "Ethan T. Painter",
+  "scripts": {
+    "clean": "rm -rf ./node_modules",
+    "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
+    "build": "tsc && cp -r node_modules dist",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:src": "eslint src/**/*.ts",
+    "lint:test": "eslint test/**/*.ts",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "serve": ""
+  }
+}

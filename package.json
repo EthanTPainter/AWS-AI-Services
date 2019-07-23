@@ -1,0 +1,33 @@
+{
+  "name": "aws-ai-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tests the AWS AI Services",
+  "author": "Ethan T. Painter",
+  "scripts": {
+    "install": "./scripts/exec-command.sh 'npm i'",
+    "clean": "./scripts/exec-command.sh 'npm run clean'",
+    "ci": "./scripts/exec-command.sh 'npm run ci'",
+    "lint": "./scripts/exec-command.sh 'npm run lint'",
+    "build": "./scripts/exec-command.sh 'npm run build'",
+    "test": "./scripts/exec-command.sh 'npm run test'"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "typescript": "^3.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/EthanTPainter/AWS-AI-Services/issues"
+  },
+  "homepage": "https://github.com/EthanTPainter/AWS-AI-Services#readme",
+  "keywords": [
+    "AWS",
+    "AI",
+    "Services"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanTPainter/AWS-AI-Services.git"
+  }
+}
