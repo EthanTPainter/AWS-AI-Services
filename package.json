@@ -4,17 +4,16 @@
   "private": true,
   "description": "Tests the AWS AI Services",
   "author": "Ethan T. Painter",
+  "main": "index.js",
   "scripts": {
-    "install": "./scripts/exec-command.sh 'npm i'",
-    "clean": "./scripts/exec-command.sh 'npm run clean'",
-    "ci": "./scripts/exec-command.sh 'npm run ci'",
-    "lint": "./scripts/exec-command.sh 'npm run lint'",
-    "build": "./scripts/exec-command.sh 'npm run build'",
-    "test": "./scripts/exec-command.sh 'npm run test'"
-  },
-  "devDependencies": {
-    "mocha": "^6.2.0",
-    "typescript": "^3.5.3"
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production",
+    "install": "./bin/exec-command.sh 'npm i'",
+    "clean": "./bin/exec-command.sh 'npm run clean'",
+    "ci": "./bin/exec-command.sh 'npm run ci'",
+    "lint": "./bin/exec-command.sh 'npm run lint'",
+    "build:packages": "./bin/exec-command.sh 'npm run build'",
+    "test": "./bin/exec-command.sh 'npm run test'"
   },
   "bugs": {
     "url": "https://github.com/EthanTPainter/AWS-AI-Services/issues"
@@ -29,5 +28,23 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EthanTPainter/AWS-AI-Services.git"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "mocha": "^6.2.0",
+    "react-hot-loader": "^4.12.12",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   }
 }
