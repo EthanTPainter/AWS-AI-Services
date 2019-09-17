@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
@@ -9,18 +9,67 @@ class App extends Component {
     return(
       <Router>
         <div className="App">
-        <h1 id="comprehend-header" > Comprehend </h1>
-        <h1 id="comprehend-medical-header" href="/comprehend-medical"> Comprehend Medical </h1>
-        <h1 id="forecast-header" href="/forecast"> Forecast </h1>
-        <h1 id="image-rekognition-header" href="/image-rekognition"> Image Rekognition </h1>
-        <h1 id="lex-header" href="/lex/"> Lex </h1>
-        <h1 id="personalize-header" href="/personalize"> Personalize </h1>
-        <h1 id="polly-header" href="/polly"> Polly </h1>
-        <h1 id="textract-header" href="/textract"> Textract </h1>
-        <h1 id="transcribe-header" href="/transcribe"> Transcribe </h1>
-        <h1 id="translate-header" href="/translate"> Translate </h1>
-        <h1 id="video-rekognition-header" href="/video-rekognition"> Video Rekognition </h1>
-      </div>
+
+          <div id="comprehend">
+            <h1 id="comprehend-image">Comprehend Image</h1>
+            <Link to="/comprehend">Comprehend</Link>
+          </div>
+
+          <div id="comprehend-medical">
+            <h1 id="comprehend-medical-image">Comprehend Medical Image</h1>
+            <Link to="/comprehend-medical">Comprehend Medical</Link>
+          </div>
+          
+          <div id="forecast">
+            <h1 id="forecast-image">Forecast Image</h1>
+            <Link to="/forecast">Forecast</Link>
+          </div>
+
+          <div>
+            <h1 id="image-rekognition-image">Image Rekognition Image</h1>
+            <Link to="/image-rekognition">Image Rekognition</Link>
+          </div>
+
+          <div id="image-rekognition">
+            <h1 id="image-rekognition-image">Image Rekognition Image</h1>
+            <Link to="/image-rekognition">Image Rekognition</Link>
+          </div>
+
+          <div id="lex">
+            <h1 id="lex-image">Lex Image</h1>
+            <Link to="/lex">Lex</Link>
+          </div>
+
+          <div id="personalize">
+            <h1 id="personalize-image">Personalize Image</h1>
+            <Link to="/personalize">Personalize</Link>
+          </div>
+
+          <div id="polly">
+            <h1 id="polly-image">Polly Image</h1>
+            <Link to="/polly">Polly</Link>
+          </div>
+
+          <div id="textract">
+            <h1 id="textract-image">Textract Image</h1>
+            <Link to="/textract">Textract</Link>
+          </div>
+
+          <div id="transcribe">
+            <h1 id="transcribe-image">Transcribe Image</h1>
+            <Link to="/transcribe">Transcribe</Link>
+          </div>
+
+          <div id="translate">
+            <h1 id="translate-image">Translate Image</h1>
+            <Link to="/translate">Translate</Link>
+          </div>
+
+          <div id="video-rekognition">
+            <h1 id="video-rekognition-image">Video Rekognition Image</h1>
+            <Link to="/video-rekognition">Video Rekognition</Link>
+          </div>
+        </div>
       </Router>
     );
   }
