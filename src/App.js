@@ -25,11 +25,6 @@ class App extends Component {
             <Link to="/forecast">Forecast</Link>
           </div>
 
-          <div>
-            <h1 id="image-rekognition-image">Image Rekognition Image</h1>
-            <Link to="/image-rekognition">Image Rekognition</Link>
-          </div>
-
           <div id="image-rekognition">
             <h1 id="image-rekognition-image">Image Rekognition Image</h1>
             <Link to="/image-rekognition">Image Rekognition</Link>
