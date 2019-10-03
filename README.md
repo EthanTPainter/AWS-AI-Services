@@ -2,12 +2,9 @@
 Repository used to test all available AWS AI Services.
 All AWS AI services are accessible via API calls.
 
-THe AI services tested
+The AI services tested
 
-## Video Rekognition
-[Brief Overview](https://aws.amazon.com/rekognition/)
-
-## Image Rekognition
+## Image & Video Rekognition
 [Brief Overview](https://aws.amazon.com/rekognition/)
 
 ## Textract
@@ -22,11 +19,8 @@ THe AI services tested
 ## Polly 
 [Brief Overview](https://aws.amazon.com/polly/)
 
-## Comprehend 
+## Comprehend & Comprehend Medical 
 [Brief Overview](https://aws.amazon.com/comprehend/)
-
-## Comprehend Medical
-[Brief Overivew](https://aws.amazon.com/comprehend/medical)
 
 ## Lex
 [Brief Overview](https://aws.amazon.com/lex/)

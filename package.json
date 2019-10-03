@@ -8,12 +8,13 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "prod": "webpack --mode production",
-    "install": "./bin/exec-command.sh 'npm i'",
-    "clean": "./bin/exec-command.sh 'npm run clean'",
-    "ci": "./bin/exec-command.sh 'npm run ci'",
-    "lint": "./bin/exec-command.sh 'npm run lint'",
-    "build:packages": "./bin/exec-command.sh 'npm run build'",
-    "test": "./bin/exec-command.sh 'npm run test'"
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
+    "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:src": "eslint src/**/*.js",
+    "lint:test": "eslint test/**/*.ts",
+    "storybook": "start-storybook",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "bugs": {
     "url": "https://github.com/EthanTPainter/AWS-AI-Services/issues"
@@ -38,6 +39,7 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^5.2.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "mocha": "^6.2.0",
