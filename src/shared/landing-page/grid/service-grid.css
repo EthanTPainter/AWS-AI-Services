@@ -1,0 +1,58 @@
+/*
+  AWS Services Grid Background
+*/
+.service-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+    "comp       fore      le"
+    "personal   pol       rekog"
+    "tex        transc    transl";
+  row-gap: 15px;
+  column-gap: 200px;
+  justify-items: center stretch;
+
+  text-align: center;
+  margin: 25px 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  AWS Services in the Grid
+*/
+.comprehend {
+  grid-area: comp;
+}
+
+.forecast {
+  grid-area: fore;
+}
+
+.lex {
+  grid-area: le;
+}
+
+.personalize {
+  grid-area: personal;
+}
+
+.polly {
+  grid-area: pol;
+}
+
+.rekognition {
+  grid-area: rekog;
+}
+
+.textract {
+  grid-area: tex;
+}
+
+.transcribe {
+  grid-area: transc;
+}
+
+.translate {
+  grid-area: transl;
+}

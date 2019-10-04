@@ -1,0 +1,12 @@
+
+#service-header, #service-subheader {
+  text-align: center;
+}
+
+#service-header {
+  font-size: 50px;
+}
+
+#service-subheader {
+  font-size: 25px;
+}
