@@ -3,17 +3,15 @@
 */
 .service-grid {
   display: grid;
-  grid-template-rows: 33% 33% 33%;
   grid-template-areas:
-    "comp       fore      le"
-    "personal   pol       rekog"
-    "tex        transc    transl";
-  row-gap: 15px;
-  column-gap: 200px;
-  justify-items: center stretch;
+    "comp comp  fore    fore    le        le    personal  personal"
+    "pol  pol   rekog   rekog   tex       tex   transc    transc"
+    ".    .     .       transl  transl    .     .         .";
+  row-gap: 70px;
+  column-gap: 70px;
+  margin: 60px 200px 20px 200px;
 
   text-align: center;
-  margin: 25px 200px;
   font-family: Arial, Helvetica, sans-serif;
 }
 

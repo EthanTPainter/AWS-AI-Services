@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Polly extends React.Component {
+const Polly = () => {
+  return <h1>Polly</h1>;
+};
 
-  render() {
-    return <h1>Polly</h1>
-  }
-}
-
-export default hot(module)(Polly);
+export default Polly;

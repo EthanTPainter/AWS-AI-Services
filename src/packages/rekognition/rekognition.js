@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Rekognition extends React.Component {
+const Rekognition = () => {
+  return <h1>Rekognition</h1>;
+};
 
-  render() {
-    return <h1>Rekognition</h1>
-  }
-}
-
-export default hot(module)(Rekognition);
+export default Rekognition;

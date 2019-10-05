@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Translate extends React.Component {
+const Translate = () => {
+  return <h1>Translate</h1>;
+};
 
-  render() {
-    return <h1>Translate</h1>
-  }
-}
-
-export default hot(module)(Translate);
+export default Translate;

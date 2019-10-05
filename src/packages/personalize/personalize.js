@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Personalize extends React.Component {
+const Personalize = () => {
+  return <h1>Personalize</h1>;
+};
 
-  render() {
-    return <h1>Personalize</h1>
-  }
-}
-
-export default hot(module)(Personalize);
+export default Personalize;

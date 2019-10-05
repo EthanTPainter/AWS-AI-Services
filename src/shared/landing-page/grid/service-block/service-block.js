@@ -1,5 +1,4 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
 import ComprehendServiceSvg from "../../../../../assets/package-images/Comprehend.svg";
 import ForecastServiceSvg from "../../../../../assets/package-images/Forecast.svg";
@@ -13,20 +12,17 @@ import TranslateServiceSvg from "../../../../../assets/package-images/Translate.
 
 import "./service-block.css";
 
-const ServiceBlock = (props) => {
+const ServiceBlock = props => {
   return (
     <div className="service-block">
-      <div>
-        <h1>{ props.name }</h1>
-        {renderServiceSvg(props.name)}
-      </div>
-      <h3>{props.name}</h3>
+      <div className="service-image">{renderServiceSvg(props.name)}</div>
+      <h1 className="service-name">{props.name}</h1>
     </div>
   );
-}
+};
 
-const renderServiceSvg = (name)  => {
-  switch(name) {
+const renderServiceSvg = name => {
+  switch (name) {
     case "Comprehend":
       return <ComprehendServiceSvg />;
     case "Forecast":
@@ -46,8 +42,16 @@ const renderServiceSvg = (name)  => {
     case "Translate":
       return <TranslateServiceSvg />;
     default:
-      return <ComprehendServiceSvg />
+      return <ComprehendServiceSvg />;
   }
+};
+
+const onMouseHover = () => {
+  return (
+  <div>
+
+  </div>
+  );
 }
 
-export default hot(module)(ServiceBlock);
+export default ServiceBlock;

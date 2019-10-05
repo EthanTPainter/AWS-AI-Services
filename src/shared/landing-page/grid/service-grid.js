@@ -1,5 +1,4 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 import ServiceBlock from "./service-block/service-block";
@@ -87,4 +86,4 @@ const ServiceGrid = () => {
   );
 };
 
-export default hot(module)(ServiceGrid);
+export default ServiceGrid;

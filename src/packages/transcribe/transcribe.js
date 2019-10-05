@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Transcribe extends React.Component {
+const Transcribe = () => {
+  return <h1>Transcribe</h1>;
+};
 
-  render() {
-    return <h1>Transcribe</h1>
-  }
-}
-
-export default hot(module)(Transcribe);
+export default Transcribe;

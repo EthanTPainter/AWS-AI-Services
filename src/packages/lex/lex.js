@@ -1,11 +1,7 @@
 import React from "react";
-import { hot } from "react-hot-loader";
 
-class Lex extends React.Component {
+const Lex = () => {
+  return <h1>Lex</h1>;
+};
 
-  render() {
-    return <h1>Lex</h1>
-  }
-}
-
-export default hot(module)(Lex);
+export default Lex;

@@ -1,6 +1,19 @@
 
 .service-block {
-  background: rgb(41, 143, 41);
+  display: grid;
+  grid-template-areas:
+    "image"
+    "image"
+    "name";
+  background: linear-gradient(360deg, #055F4E -23.6%, #56C0A7 151.6%);
   border-radius: 50px;
-  height: 300px;
+}
+
+.service-image {
+  margin-top: 8%;
+  grid-area: image;
+}
+
+.service-name {
+  grid-area: name;
 }
