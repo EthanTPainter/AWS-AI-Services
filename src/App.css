@@ -1,58 +1,11 @@
 
-.app {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-areas:
-    "comp      compMed   fore"
-    "imageRek  l         person"
-    "pol       tex       transc"
-    "transl    videoRek  .";
-  justify-items: center;
-  margin: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+#app {
+  background-size: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.comprehend {
-  grid-area: comp;
+html {
+  background: #e4f0ee;
 }
 
-.comprehend-medical {
-  grid-area: compMed;
-}
-
-.forecast {
-  grid-area: fore;
-}
-
-.image-rekognition {
-  grid-area: imageRek;
-}
-
-.lex {
-  grid-area: l;
-}
-
-.personalize {
-  grid-area: person;
-}
-
-.polly {
-  grid-area: pol;
-}
-
-.textract {
-  grid-area: tex;
-}
-
-.transcribe {
-  grid-area: transc;
-}
-
-.translate {
-  grid-area: transl
-}
-
-.video-rekognition {
-  grid-area: videoRek;
-}

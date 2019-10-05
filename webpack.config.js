@@ -6,15 +6,32 @@ module.exports = {
   mode: "production",
   module: {
     rules: [
+      // JSX Loader
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
         options: { presets: ["@babel/env"] }
       },
+      // CSS Loader
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      // SVG Loader
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "babel-loader"
+          },
+          {
+            loader: "react-svg-loader",
+            options: {
+              jsx: true  //true outputs JSXX tags
+            }
+          }
+        ]
       }
     ]
   },
