@@ -3,7 +3,6 @@
 */
 .service-grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
     "comp       fore      le"
