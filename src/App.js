@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { hot } from "react-hot-loader";
+import React from "react";
 
 import ServiceHeader from "./shared/header/service-header/service-header";
 import ServiceGrid from "./shared/landing-page/grid/service-grid";
@@ -12,7 +11,6 @@ const App = () => {
     <div id="app">
       <ServiceHeader
         title="AWS AI Services"
-        subheader="Select one of the AWS AI Services"
       />
       <ServiceGrid />
       <ServiceFooter repoUrl="https://www.github.com/EthanTPainter/AWS-AI-Services" />
@@ -20,4 +18,4 @@ const App = () => {
   );
 };
 
-export default hot(module)(App);
+export default App;
