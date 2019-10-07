@@ -1,5 +1,7 @@
 /*
   AWS Services Grid Background
+  Note: I'm using this as practice for CSS Grids
+  Doing this efficiently, you should use flexbox
 */
 .service-grid {
   display: grid;
@@ -20,36 +22,59 @@
 */
 .comprehend {
   grid-area: comp;
+  padding: 1em;
 }
 
 .forecast {
   grid-area: fore;
+  padding: 1em;
 }
 
 .lex {
   grid-area: le;
+  padding: 1em;
 }
 
 .personalize {
   grid-area: personal;
+  padding: 1em;
 }
 
 .polly {
   grid-area: pol;
+  padding: 1em;
 }
 
 .rekognition {
   grid-area: rekog;
+  padding: 1em;
 }
 
 .textract {
   grid-area: tex;
+  padding: 1em;
 }
 
 .transcribe {
   grid-area: transc;
+  padding: 1em;
 }
 
 .translate {
   grid-area: transl;
+  padding: 1em;
+}
+
+/*
+  Add color around grid option while hovering
+*/
+ServiceBlock:hover {
+  background: radial-gradient(
+    81.02% 81.02% at 62.5% -38.41%,
+    rgba(87, 206, 243, 0.38) 0%,
+    #56c0a7 33.33%,
+    #56c0a8 66.67%,
+    #56c0a7 100%
+  );
+  border-radius: 50px;
 }
