@@ -2,7 +2,7 @@ import React from "react";
 
 import "./service-footer.css";
 
-const ServiceFooter = props => {
+export const ServiceFooter = props => {
   return (
     <div className="footer">
       <p>Ethan T. Painter &copy; {new Date().getFullYear()}</p>
@@ -12,5 +12,3 @@ const ServiceFooter = props => {
     </div>
   );
 };
-
-export default ServiceFooter;

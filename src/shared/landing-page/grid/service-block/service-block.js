@@ -12,7 +12,7 @@ import TranslateServiceSvg from "../../../../../assets/package-images/Translate.
 
 import "./service-block.css";
 
-const ServiceBlock = props => {
+export const ServiceBlock = props => {
   return (
     <div className="service-block">
       <div className="service-image">{renderServiceSvg(props.name)}</div>
@@ -45,13 +45,3 @@ const renderServiceSvg = name => {
       return <ComprehendServiceSvg />;
   }
 };
-
-const onMouseHover = () => {
-  return (
-  <div>
-
-  </div>
-  );
-}
-
-export default ServiceBlock;

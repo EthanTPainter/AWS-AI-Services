@@ -2,7 +2,7 @@ import React from "react";
 
 import "./service-header.css";
 
-const ServiceHeader = props => {
+export const ServiceHeader = props => {
   return (
     <div>
       <h1 id="service-header">{props.title}</h1>
@@ -15,5 +15,3 @@ const ServiceHeader = props => {
     </div>
   );
 };
-
-export default ServiceHeader;
