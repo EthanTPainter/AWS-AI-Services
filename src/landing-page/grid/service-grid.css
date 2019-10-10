@@ -9,10 +9,8 @@
     "comp comp  fore    fore    le        le    personal  personal"
     "pol  pol   rekog   rekog   tex       tex   transc    transc"
     ".    .     .       transl  transl    .     .         .";
-  row-gap: 70px;
-  column-gap: 70px;
-  margin: 60px 200px 20px 200px;
-
+  row-gap: 2em;
+  margin: 3em 10em 2em 10em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,59 +20,45 @@
 */
 .comprehend {
   grid-area: comp;
-  padding: 1em;
+  padding: 2em;
 }
 
 .forecast {
   grid-area: fore;
-  padding: 1em;
+  padding: 2em;
 }
 
 .lex {
   grid-area: le;
-  padding: 1em;
+  padding: 2em;
 }
 
 .personalize {
   grid-area: personal;
-  padding: 1em;
+  padding: 2em;
 }
 
 .polly {
   grid-area: pol;
-  padding: 1em;
+  padding: 2em;
 }
 
 .rekognition {
   grid-area: rekog;
-  padding: 1em;
+  padding: 2em;
 }
 
 .textract {
   grid-area: tex;
-  padding: 1em;
+  padding: 2em;
 }
 
 .transcribe {
   grid-area: transc;
-  padding: 1em;
+  padding: 2em;
 }
 
 .translate {
   grid-area: transl;
-  padding: 1em;
-}
-
-/*
-  Add color around grid option while hovering
-*/
-ServiceBlock:hover {
-  background: radial-gradient(
-    81.02% 81.02% at 62.5% -38.41%,
-    rgba(87, 206, 243, 0.38) 0%,
-    #56c0a7 33.33%,
-    #56c0a8 66.67%,
-    #56c0a7 100%
-  );
-  border-radius: 50px;
+  padding: 2em;
 }
