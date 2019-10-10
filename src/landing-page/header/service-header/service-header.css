@@ -4,9 +4,10 @@
 }
 
 #service-header {
-  font-size: 50px;
+  font-size: 7em;
 }
 
 #service-subheader {
-  font-size: 25px;
+  font-size: 3em;
+  margin: 0 3em;
 }
