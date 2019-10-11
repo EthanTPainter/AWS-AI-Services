@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./service-header.css";
+import "./header.css";
 
 export const ServiceHeader = props => {
   return (

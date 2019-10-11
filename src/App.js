@@ -1,8 +1,8 @@
 import React from "react";
 
-import { ServiceHeader } from "./landing-page/header/service-header/service-header";
-import { ServiceGrid } from "./landing-page/grid/service-grid";
-import { ServiceFooter } from "./landing-page/footer/service-footer/service-footer";
+import { ServiceHeader } from "./landing-page/header";
+import { ServiceGrid } from "./landing-page/grid";
+import { ServiceFooter } from "./shared/footer/service-footer";
 
 import "./App.css";
 

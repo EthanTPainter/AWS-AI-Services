@@ -1,17 +1,17 @@
 import React from "react";
 
-import { ServicesENUMS } from "../../../enums";
-import ComprehendServiceSvg from "../../../../assets/package-images/Comprehend.svg";
-import ForecastServiceSvg from "../../../../assets/package-images/Forecast.svg";
-import LexServiceSvg from "../../../../assets/package-images/Lex.svg";
-import PersonalizeServiceSvg from "../../../../assets/package-images/Personalize.svg";
-import PollyServiceSvg from "../../../../assets/package-images/Polly.svg";
-import RekognitionServiceSvg from "../../../../assets/package-images/Rekognition.svg";
-import TextractServiceSvg from "../../../../assets/package-images/Textract.svg";
-import TranscribeServiceSvg from "../../../../assets/package-images/Transcribe.svg";
-import TranslateServiceSvg from "../../../../assets/package-images/Translate.svg";
+import { ServicesENUMS } from "../../enums";
+import ComprehendServiceSvg from "../../../assets/package-images/Comprehend.svg";
+import ForecastServiceSvg from "../../../assets/package-images/Forecast.svg";
+import LexServiceSvg from "../../../assets/package-images/Lex.svg";
+import PersonalizeServiceSvg from "../../../assets/package-images/Personalize.svg";
+import PollyServiceSvg from "../../../assets/package-images/Polly.svg";
+import RekognitionServiceSvg from "../../../assets/package-images/Rekognition.svg";
+import TextractServiceSvg from "../../../assets/package-images/Textract.svg";
+import TranscribeServiceSvg from "../../../assets/package-images/Transcribe.svg";
+import TranslateServiceSvg from "../../../assets/package-images/Translate.svg";
 
-import "./service-block.css";
+import "./block.css";
 
 export const ServiceBlock = props => {
   // After selecting a service, redirect to the service page

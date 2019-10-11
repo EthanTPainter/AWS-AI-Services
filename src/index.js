@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
 import { App } from "./App.js";
-import { ComprehendPage } from "./service-pages/service";
+import { ComprehendPage } from "./services/service";
 
 const routing = (
   <Router>

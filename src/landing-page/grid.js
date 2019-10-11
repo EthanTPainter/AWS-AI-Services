@@ -1,10 +1,10 @@
 import React from "react";
 
-import { ServicesENUMS } from "../../enums/services";
-import { ServiceBlock } from "./service-block/service-block";
+import { ServicesENUMS } from "../enums";
+import { ServiceBlock } from "./block/block";
 
-import "./service-grid.css";
-import "./service-block/service-block.css";
+import "./grid.css";
+import "./block/block.css";
 
 export const ServiceGrid = props => {
   return (
