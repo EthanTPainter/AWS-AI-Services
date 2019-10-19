@@ -1,4 +1,4 @@
-export const ServicesENUMS = {
+export const SERVICES = {
   COMPREHEND: "Comprehend",
   FORECAST: "Forecast",
   LEX: "Lex",
