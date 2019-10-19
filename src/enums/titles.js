@@ -1,4 +1,4 @@
-export const SERVICES = {
+export const TITLES = {
   COMPREHEND: "Comprehend",
   FORECAST: "Forecast",
   LEX: "Lex",

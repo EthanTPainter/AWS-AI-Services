@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ServicesENUMS } from "../enums";
+import { TITLES } from "../enums";
 import { ServiceBlock } from "./block/block";
 
 import "./grid.css";
@@ -10,45 +10,45 @@ export const ServiceGrid = props => {
   return (
     <div className="service-grid">
       <div className="comprehend">
-        <ServiceBlock name={ServicesENUMS.COMPREHEND} history={props.history} />
+        <ServiceBlock name={TITLES.COMPREHEND} history={props.history} />
       </div>
 
       <div className="forecast">
-        <ServiceBlock name={ServicesENUMS.FORECAST} history={props.history} />
+        <ServiceBlock name={TITLES.FORECAST} history={props.history} />
       </div>
 
       <div className="lex">
-        <ServiceBlock name={ServicesENUMS.LEX} history={props.history} />
+        <ServiceBlock name={TITLES.LEX} history={props.history} />
       </div>
 
       <div className="personalize">
         <ServiceBlock
-          name={ServicesENUMS.PERSONALIZE}
+          name={TITLES.PERSONALIZE}
           history={props.history}
         />
       </div>
 
       <div className="polly">
-        <ServiceBlock name={ServicesENUMS.POLLY} history={props.history} />
+        <ServiceBlock name={TITLES.POLLY} history={props.history} />
       </div>
 
       <div className="rekognition">
         <ServiceBlock
-          name={ServicesENUMS.REKOGNITION}
+          name={TITLES.REKOGNITION}
           history={props.history}
         />
       </div>
 
       <div className="textract">
-        <ServiceBlock name={ServicesENUMS.TEXTRACT} history={props.history} />
+        <ServiceBlock name={TITLES.TEXTRACT} history={props.history} />
       </div>
 
       <div className="transcribe">
-        <ServiceBlock name={ServicesENUMS.TRANSCRIBE} history={props.history} />
+        <ServiceBlock name={TITLES.TRANSCRIBE} history={props.history} />
       </div>
 
       <div className="translate">
-        <ServiceBlock name={ServicesENUMS.TRANSLATE} history={props.history} />
+        <ServiceBlock name={TITLES.TRANSLATE} history={props.history} />
       </div>
     </div>
   );
