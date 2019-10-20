@@ -1,44 +1,44 @@
 import React from "react";
 
-import { ServicesENUMS } from "../../enums";
-import ComprehendServiceSvg from "../../../assets/package-images/Comprehend.svg";
-import ForecastServiceSvg from "../../../assets/package-images/Forecast.svg";
-import LexServiceSvg from "../../../assets/package-images/Lex.svg";
-import PersonalizeServiceSvg from "../../../assets/package-images/Personalize.svg";
-import PollyServiceSvg from "../../../assets/package-images/Polly.svg";
-import RekognitionServiceSvg from "../../../assets/package-images/Rekognition.svg";
-import TextractServiceSvg from "../../../assets/package-images/Textract.svg";
-import TranscribeServiceSvg from "../../../assets/package-images/Transcribe.svg";
-import TranslateServiceSvg from "../../../assets/package-images/Translate.svg";
+import { TITLES } from "../enums";
+import ComprehendServiceSvg from "../../assets/package-images/Comprehend.svg";
+import ForecastServiceSvg from "../../assets/package-images/Forecast.svg";
+import LexServiceSvg from "../../assets/package-images/Lex.svg";
+import PersonalizeServiceSvg from "../../assets/package-images/Personalize.svg";
+import PollyServiceSvg from "../../assets/package-images/Polly.svg";
+import RekognitionServiceSvg from "../../assets/package-images/Rekognition.svg";
+import TextractServiceSvg from "../../assets/package-images/Textract.svg";
+import TranscribeServiceSvg from "../../assets/package-images/Transcribe.svg";
+import TranslateServiceSvg from "../../assets/package-images/Translate.svg";
 
-import "./block.css";
+import "../css/landing-page/block.css";
 
 export const ServiceBlock = props => {
   // After selecting a service, redirect to the service page
   const onServiceSelect = (name, history) => {
     switch (name) {
-      case ServicesENUMS.COMPREHEND:
+      case TITLES.COMPREHEND:
         history.push("/comprehend");
         return;
-      case ServicesENUMS.FORECAST:
+      case TITLES.FORECAST:
         history.push("/forecast");
         return;
-      case ServicesENUMS.LEX:
+      case TITLES.LEX:
         history.push("/lex");
         return;
-      case ServicesENUMS.POLLY:
+      case TITLES.POLLY:
         history.push("/polly");
         return;
-      case ServicesENUMS.REKOGNITION:
+      case TITLES.REKOGNITION:
         history.push("/rekognition");
         return;
-      case ServicesENUMS.TEXTRACT:
+      case TITLES.TEXTRACT:
         history.push("/textract");
         return;
-      case ServicesENUMS.TRANSCRIBE:
+      case TITLES.TRANSCRIBE:
         history.push("/transcribe");
         return;
-      case ServicesENUMS.TRANSLATE:
+      case TITLES.TRANSLATE:
         history.push("/translate");
         return;
       default:
@@ -59,23 +59,23 @@ export const ServiceBlock = props => {
 
 const renderServiceSvg = name => {
   switch (name) {
-    case ServicesENUMS.COMPREHEND:
+    case TITLES.COMPREHEND:
       return <ComprehendServiceSvg />;
-    case ServicesENUMS.FORECAST:
+    case TITLES.FORECAST:
       return <ForecastServiceSvg />;
-    case ServicesENUMS.LEX:
+    case TITLES.LEX:
       return <LexServiceSvg />;
-    case ServicesENUMS.PERSONALIZE:
+    case TITLES.PERSONALIZE:
       return <PersonalizeServiceSvg />;
-    case ServicesENUMS.POLLY:
+    case TITLES.POLLY:
       return <PollyServiceSvg />;
-    case ServicesENUMS.REKOGNITION:
+    case TITLES.REKOGNITION:
       return <RekognitionServiceSvg />;
-    case ServicesENUMS.TEXTRACT:
+    case TITLES.TEXTRACT:
       return <TextractServiceSvg />;
-    case ServicesENUMS.TRANSCRIBE:
+    case TITLES.TRANSCRIBE:
       return <TranscribeServiceSvg />;
-    case ServicesENUMS.TRANSLATE:
+    case TITLES.TRANSLATE:
       return <TranslateServiceSvg />;
     default:
       return <ComprehendServiceSvg />;

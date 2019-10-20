@@ -1,17 +1,20 @@
 import React from "react";
 
-import { ServiceHeader } from "./landing-page/header";
 import { ServiceGrid } from "./landing-page/grid";
-import { ServiceFooter } from "./shared/footer/service-footer";
+import { Header, Footer } from "./shared";
 
-import "./App.css";
+import "./css/App.css";
 
-export const App = (props) => {
+export const App = props => {
   return (
     <div id="app">
-      <ServiceHeader title="AWS AI Services" />
-      <ServiceGrid history={props.history}/>
-      <ServiceFooter repoUrl="https://www.github.com/EthanTPainter/AWS-AI-Services" />
+      <Header
+        title="AWS AI Services"
+        description="Below are a list of Artifical Intelligence (AI) Services provided by
+        AWS. Select a service below to start using it"
+      />
+      <ServiceGrid history={props.history} />
+      <Footer repoUrl="https://www.github.com/EthanTPainter/AWS-AI-Services" />
     </div>
   );
 };

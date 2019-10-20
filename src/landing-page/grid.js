@@ -1,10 +1,10 @@
 import React from "react";
 
 import { TITLES } from "../enums";
-import { ServiceBlock } from "./block/block";
+import { ServiceBlock } from "./block";
 
-import "./grid.css";
-import "./block/block.css";
+import "../css/landing-page/grid.css";
+import "../css/landing-page/block.css";
 
 export const ServiceGrid = props => {
   return (
@@ -22,10 +22,7 @@ export const ServiceGrid = props => {
       </div>
 
       <div className="personalize">
-        <ServiceBlock
-          name={TITLES.PERSONALIZE}
-          history={props.history}
-        />
+        <ServiceBlock name={TITLES.PERSONALIZE} history={props.history} />
       </div>
 
       <div className="polly">
@@ -33,10 +30,7 @@ export const ServiceGrid = props => {
       </div>
 
       <div className="rekognition">
-        <ServiceBlock
-          name={TITLES.REKOGNITION}
-          history={props.history}
-        />
+        <ServiceBlock name={TITLES.REKOGNITION} history={props.history} />
       </div>
 
       <div className="textract">
