@@ -1,13 +1,13 @@
-#service-header,
-#service-subheader {
+#header,
+#subheader {
   text-align: center;
 }
 
-#service-header {
+#header {
   font-size: 7em;
 }
 
-#service-subheader {
+#subheader {
   font-size: 3em;
   margin: 0 3em;
 }
