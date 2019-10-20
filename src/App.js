@@ -10,8 +10,8 @@ export const App = props => {
     <div id="app">
       <Header
         title="AWS AI Services"
-        description="Below are a list of Artifical Intelligence (AI) Services provided by
-        AWS. Select a service below to start using it"
+        mainDescription="Below are a list of Artifical Intelligence (AI) Services provided by
+        AWS. Select a service below to see an overview of the service and how to use it."
       />
       <ServiceGrid history={props.history} />
       <Footer repoUrl="https://www.github.com/EthanTPainter/AWS-AI-Services" />

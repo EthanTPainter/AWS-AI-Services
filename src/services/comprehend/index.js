@@ -1,1 +1,1 @@
-export { ComprehendLandingPage } from "./landing";
+export { Comprehend } from "./landing";

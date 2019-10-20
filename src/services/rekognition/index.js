@@ -1,0 +1,1 @@
+export { Rekognition } from "./landing";

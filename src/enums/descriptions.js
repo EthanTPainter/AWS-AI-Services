@@ -1,10 +1,12 @@
 export const DESCRIPTIONS = {
-  COMPREHEND: "Comprehend is divided into two subservices: Comprehend and Comprehend Medical." +
-  "\nComprehend is a natural language processing (NLP) service " +
+  COMPREHEND_PART_ONE: "Comprehend is divided into two subservices: Comprehend and Comprehend Medical.",
+
+  COMPREHEND_PART_TWO: "Comprehend is a natural language processing (NLP) service " +
   "that uses machine learning to find insights and relationships in text. " +
   "Provided any given text, Comprehend can be used to extract information from unstructured text " +
-  "about general insights or relationships, and provide data about expected relations with a specific certainty. " +
-  "\nComprehend Medical is a natural language processing service that makes it easy to " +
+  "about general insights or relationships, and provide data about expected relations with a specific certainty. ",
+
+  COMPREHEND_PART_THREE: "Comprehend Medical is a natural language processing service that makes it easy to " +
   "extract relevant medical information from unstructured text. Using " +
   "Comprehend Medical, you can quickly and accurately gather information, such as medical " +
   "condition, medication, dosage, strength, and frequency from a variety of sources like " +
@@ -30,11 +32,13 @@ export const DESCRIPTIONS = {
   "and male or female voices to cater to your audience. Neural TTS technology also supports a Newcaster " +
   "reading style tailored to news narration use cases",
 
-  REKOGNITION: "Rekognition is divided into two subservices: Image Rekognition and Video Rekognition. " +
-  "Both services are used to rekognize objects, people, text, scenes, activities, and more. " +
-  "Image Rekognition provides a variety of processing techniques: object and scene detection, image moderation, " +
-  "facial analysis, celebrity recognition, face comparisons, and understanding text in images" +
-  "Video Rekognition processes videos through video analysis to discover any recognizable attributes in the provided video",
+  REKOGNITION_PART_ONE: "Rekognition is divided into two subservices: Image Rekognition and Video Rekognition. " +
+  "Both services are used to rekognize objects, people, text, scenes, activities, and more. ",
+
+  REKOGNITION_PART_TWO: "Image Rekognition provides a variety of processing techniques: object and scene detection, image moderation, " +
+  "facial analysis, celebrity recognition, face comparisons, and understanding text in images",
+
+  REKOGNITION_PART_THREE: "Video Rekognition processes videos through video analysis to discover any recognizable attributes in the provided video",
 
   TEXTRACT: "Textract allows quick and easy text extraction from documents and forms. Textract will automatically " +
   "detect a document's layout, understand data relationships in forms and tables, and maintain context. This allows " +
