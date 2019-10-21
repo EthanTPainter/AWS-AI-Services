@@ -30,3 +30,25 @@ The AI services tested
 
 ## Personalize
 [Brief Overview](https://aws.amazon.com/personalize/)
+
+## Dependency Breakdown
+
+### Dependencies
+
+**react, react-dom, react-jss**: Basic react npm packages for a react install
+
+**react-router-dom**: React router for managing how the application routes page to page
+
+### Dev Dependencies
+
+**@babel/core, @babel/present-env, @babel/preset-react, babel-loader**: Basic babel npm packages
+
+**@storybook/react**: Storybook npm package for creating and testing individual components outside of the main application
+
+**css-loader, style-loader**: Basic style loaders for handling css and style files
+
+**mocha**: Testing library (in case I actually use this in the future. May rely on Cypress for most testing)
+
+**react-svg-loader**: An SVG loader to handle SVGs in the project
+
+**webpack, webpack-cli, webpack-dev-server**: Basic webpack npm packages to control bundling, cli commands, and deploying on a local dev server for testing
