@@ -1,3 +1,13 @@
+:root {
+  /* Light */
+  --light-background: #e4f0ee;
+  --light-text: #000000;
+
+  /* Dark */
+  --dark-background: #121212;
+  --dark-text: #ffffff;
+}
+
 #app {
   background-size: 100%;
   min-width: 100%;
@@ -5,5 +15,5 @@
 }
 
 html {
-  background: #e4f0ee;
+  background: var(--light-background);
 }
