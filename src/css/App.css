@@ -1,7 +1,15 @@
+/* CSS Variables to apply based on Light or Dark themes */
 :root {
   /* Light */
   --light-background: #e4f0ee;
   --light-text: #000000;
+  --light-block-background: radial-gradient(
+    81.02% 81.02% at 62.5% -38.41%,
+    rgba(87, 206, 243, 0.38) 0%,
+    #56c0a7 33.33%,
+    #56c0a8 66.67%,
+    #56c0a7 100%
+  );
 
   /* Dark */
   --dark-background: #121212;
@@ -15,5 +23,5 @@
 }
 
 html {
-  background: var(--light-background);
+  background: #eff0ee;
 }

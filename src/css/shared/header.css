@@ -1,13 +1,10 @@
-#header,
-#subheader {
-  text-align: center;
-}
-
 #header {
+  text-align: center;
   font-size: 5em;
 }
 
 #subheader {
+  text-align: left;
   font-size: 2em;
   margin: 0 3em;
 }
