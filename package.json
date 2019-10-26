@@ -1,7 +1,7 @@
 {
   "name": "aws-ai-services",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Tests the AWS AI Services",
   "author": "Ethan T. Painter",
   "main": "index.js",
