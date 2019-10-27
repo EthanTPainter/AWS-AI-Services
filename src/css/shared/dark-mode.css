@@ -1,7 +1,7 @@
 
 /* Dark Mode Button (Simple Grid) */
 #dark-mode-btn {
-  background: #cfc4c4;
+  background: var(--dark-mode-btn-color);
   width: 10em;
   height: 3em;
   border-radius: 70px;
@@ -9,12 +9,12 @@
 }
 
 #dark-mode-btn:hover {
-  box-shadow: 0 0 15px #17eb17;
+  box-shadow: var(--dark-mode-btn-hover);
 }
 
 /* Parts of the button grid */
 #dark-mode-txt {
-  color: white;
+  color: var(--text-color);
   margin: 1em;
   text-align: center;
 }

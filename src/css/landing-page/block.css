@@ -5,22 +5,16 @@
     "image"
     "name";
 
-  background: linear-gradient(360deg, #055f4e -23.6%, #56c0a7 151.6%);
+  background: var(--block-background-color);
   border-radius: 50px;
   padding: 1em;
 }
 
 .service-block:hover {
-  background: radial-gradient(
-    81.02% 81.02% at 62.5% -38.41%,
-    rgba(87, 206, 243, 0.38) 0%,
-    #56c0a7 33.33%,
-    #56c0a8 66.67%,
-    #56c0a7 100%
-  );
+  background: var(--block-background-hover-color);
   border-radius: 50px;
   transform: scale(1.2);
-  box-shadow: 0 0 20px #17eb17;
+  box-shadow: var(--block-hover-shadow);
 }
 
 .service-image {

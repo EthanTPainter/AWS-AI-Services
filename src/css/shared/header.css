@@ -1,9 +1,11 @@
 #header {
+  color: var(--text-color);
   text-align: center;
   font-size: 5em;
 }
 
 #subheader {
+  color: var(--text-color);
   text-align: left;
   font-size: 2em;
   margin: 0 3em;
