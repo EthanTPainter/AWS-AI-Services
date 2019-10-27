@@ -1,0 +1,18 @@
+
+/* Grid for Language Field */
+#language-field-container {
+  display: grid;
+  grid-template-areas: 
+    ".  title   title       ."
+    ".  select  select  .";
+}
+
+/* */
+#language-field-title {
+  grid-area: title;
+  justify-self: center;
+}
+
+#language-field-select {
+  grid-area: select;
+}
