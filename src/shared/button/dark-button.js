@@ -26,6 +26,7 @@ export const DarkModeButton = props => {
       setTheme("dark-theme");
     }
   };
+
   // Immediately invoked function to set the theme on initial load
   (function() {
     if (localStorage.getItem("theme") === "dark-theme") {
@@ -79,7 +80,7 @@ export const DarkModeButton = props => {
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
-      <h5>{darkModeText}</h5>
+      <h2 id="dark-mode-txt">{darkModeText}</h2>
     </div>
   );
 };
