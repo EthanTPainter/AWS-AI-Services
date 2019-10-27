@@ -1,29 +1,25 @@
 import React from "react";
+import Select from "react-select";
+import { css, jsx } from "@emotion/core";
+
 import { LANGUAGES } from "../../enums";
+
+import "../../css/services/comprehend/language-field.css";
+
+// options for the select dropdown
+const options = [
+  { value: LANGUAGES.ENGLISH.abbr, label: LANGUAGES.ENGLISH.primary },
+  { value: LANGUAGES.FRENCH.abbr, label: LANGUAGES.FRENCH.primary },
+  { value: LANGUAGES.GERMAN.abbr, label: LANGUAGES.GERMAN.primary },
+  { value: LANGUAGES.ITALIAN.abbr, label: LANGUAGES.ITALIAN.primary },
+  { value: LANGUAGES.SPANISH.abbr, label: LANGUAGES.SPANISH.primary },
+];
 
 export const LanguageField = () => {
   return (
     <div id="language-field-container">
-      <select id="language-field-select">
-        <option id="language-field-option" value={LANGUAGES.ENGLISH.abbr}>
-          {LANGUAGES.ENGLISH.primary}{" "}
-        </option>
-        <option id="language-field-option" value={LANGUAGES.FRENCH.abbr}>
-          {LANGUAGES.FRENCH.primary}{" "}
-        </option>
-        <option id="language-field-option" value={LANGUAGES.GERMAN.abbr}>
-          {LANGUAGES.GERMAN.primary}{" "}
-        </option>
-        <option id="language-field-option" value={LANGUAGES.ITALIAN.abbr}>
-          {LANGUAGES.ITALIAN.primary}{" "}
-        </option>
-        <option id="language-field-option" value={LANGUAGES.PORTUGUESE.abbr}>
-          {LANGUAGES.PORTUGUESE.primary}{" "}
-        </option>
-        <option id="language-field-option" value={LANGUAGES.Spanish.abbr}>
-          {LANGUAGES.Spanish.primary}
-        </option>
-      </select>
+      <h2 id="language-field-title">Language</h2>
+      <Select id="language-field-select" options={options} />
     </div>
   );
 };
