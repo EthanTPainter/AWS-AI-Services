@@ -1,11 +1,20 @@
-:root {
-  /* Light */
-  --light-background: #e4f0ee;
-  --light-text: #000000;
+/* Light theme */
+.light-theme {
+  --background-color: #e4f0ee;
+  --text-color: #000000;
+  --block-background: radial-gradient(
+    81.02% 81.02% at 62.5% -38.41%,
+    rgba(87, 206, 243, 0.38) 0%,
+    #56c0a7 33.33%,
+    #56c0a8 66.67%,
+    #56c0a7 100%
+  );
+}
 
-  /* Dark */
-  --dark-background: #121212;
-  --dark-text: #ffffff;
+/* Dark Theme */
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
 }
 
 #app {
@@ -15,5 +24,5 @@
 }
 
 html {
-  background: var(--light-background);
+  background: var(--background-color);
 }
