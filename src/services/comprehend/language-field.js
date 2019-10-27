@@ -1,6 +1,5 @@
 import React from "react";
 import Select from "react-select";
-import { css, jsx } from "@emotion/core";
 
 import { LANGUAGES } from "../../enums";
 
