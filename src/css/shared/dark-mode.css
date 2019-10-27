@@ -1,11 +1,7 @@
 
 /* Dark Mode Button (Simple Grid) */
 #dark-mode-btn {
-  display: grid;
-  grid-template-areas: "txt check";
-  grid-template-columns: 70% 30%;
-
-  background: #000000;
+  background: #cfc4c4;
   width: 10em;
   height: 3em;
   border-radius: 70px;
@@ -18,17 +14,7 @@
 
 /* Parts of the button grid */
 #dark-mode-txt {
-  grid-area: txt;
-
   color: white;
   margin: 1em;
   text-align: center;
-}
-
-#check-mark {
-  grid-area: check;
-
-  fill: rgb(23, 235, 23);
-  display: block;
-  margin: auto;
 }

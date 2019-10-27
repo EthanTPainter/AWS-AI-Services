@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CheckMark from "../../../assets/dark-mode/CheckMark.svg";
 
 import "../../css/shared/dark-mode.css";
 
@@ -13,20 +12,44 @@ export const DarkModeButton = props => {
   const [darkMode, setDarkMode] = useState(false);
   const [darkModeText, setDarkModeText] = useState(darkModeTextOptions.default);
 
-  // If dark mode is enabled, swap to light
-  // Otherwise swap from light to dark
+  // function to set a given theme/color-scheme
+  const setTheme = themeName => {
+    localStorage.setItem("theme", themeName);
+    document.documentElement.className = themeName;
+  };
+
+  // function to toggle between light and dark theme
+  const toggleTheme = () => {
+    if (localStorage.getItem("theme") === "dark-theme") {
+      setTheme("light-theme");
+    } else {
+      setTheme("dark-theme");
+    }
+  };
+  // Immediately invoked function to set the theme on initial load
+  (function() {
+    if (localStorage.getItem("theme") === "dark-theme") {
+      setTheme("dark-theme");
+    } else {
+      setTheme("light-theme");
+    }
+  })();
+
   const handleDarkModeClick = () => {
+    // Swap to light mode
     if (darkMode) {
       setDarkMode(false);
-      props.themeSetter(0);
       setDarkModeText(darkModeTextOptions.active);
     }
 
+    // Swap to dark mode
     if (!darkMode) {
       setDarkMode(true);
-      props.themeSetter(1);
       setDarkModeText(darkModeTextOptions.disable);
     }
+
+    // Add or remove dark attribute
+    toggleTheme();
   };
 
   const onMouseEnterHandler = () => {
