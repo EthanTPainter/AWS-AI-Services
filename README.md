@@ -35,9 +35,11 @@ The AI services tested
 
 ### Dependencies
 
-**react, react-dom, react-jss**: Basic react npm packages for a react install
+**@emotion/core, @emotion/styled, emotion-theming**: Emotion related packages to implement CSS-in-JS
 
-**react-router-dom**: React router for managing how the application routes page to page
+**react, react-dom**: Basic react npm packages for a react install
+
+**react-router-dom**: React router for managing how the application routes page to page 
 
 ### Dev Dependencies
 
