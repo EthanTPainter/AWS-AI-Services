@@ -3,16 +3,21 @@
 #language-field-container {
   display: grid;
   grid-template-areas: 
-    ".  title   title       ."
+    ".  title   title   ."
     ".  select  select  .";
+  margin: 3em 8em;
+  padding: 1em 0em 3em 0em;
 }
 
-/* */
+/* Language Field Title */
 #language-field-title {
   grid-area: title;
   justify-self: center;
+  color: var(--text-color);
+  font-size: 2em;
 }
 
+/* Language Field Select */
 #language-field-select {
   grid-area: select;
 }
