@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Header } from "../../shared";
+import { Header, Footer, DarkModeButton } from "../../shared";
 import { DESCRIPTIONS, TITLES } from "../../enums";
+import { LanguageField } from "./language-field";
 
 export const Comprehend = () => {
   const title = TITLES.COMPREHEND;
@@ -11,12 +12,15 @@ export const Comprehend = () => {
 
   return (
     <div>
+      <DarkModeButton />
       <Header
         title={title}
         mainDescription={description}
         secondaryDescription={comprehendDetails}
         tertiaryDescription={comprehendMedicalDetails}
       />
+      <LanguageField />
+      <Footer />
     </div>
   );
 };

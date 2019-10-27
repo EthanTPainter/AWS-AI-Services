@@ -9,7 +9,6 @@ export const DarkModeButton = props => {
     enable: "Enable",
     disable: "Disable",
   };
-  const [darkMode, setDarkMode] = useState(false);
   const [darkModeText, setDarkModeText] = useState(darkModeTextOptions.default);
 
   // function to set a given theme/color-scheme
@@ -38,14 +37,11 @@ export const DarkModeButton = props => {
 
   const handleDarkModeClick = () => {
     // Swap to light mode
-    if (darkMode) {
-      setDarkMode(false);
+    if (localStorage.getItem("theme") === "dark-theme") {
       setDarkModeText(darkModeTextOptions.active);
     }
-
     // Swap to dark mode
-    if (!darkMode) {
-      setDarkMode(true);
+    else {
       setDarkModeText(darkModeTextOptions.disable);
     }
 
@@ -54,22 +50,20 @@ export const DarkModeButton = props => {
   };
 
   const onMouseEnterHandler = () => {
-    if (!darkMode) {
-      setDarkModeText(darkModeTextOptions.enable);
-    }
-
-    if (darkMode) {
+    if (localStorage.getItem("theme") === "dark-theme") {
       setDarkModeText(darkModeTextOptions.disable);
+    }
+    else {
+      setDarkModeText(darkModeTextOptions.enable);
     }
   };
 
   const onMouseLeaveHandler = () => {
-    if (!darkMode) {
-      setDarkModeText(darkModeTextOptions.default);
-    }
-
-    if (darkMode) {
+    if (localStorage.getItem("theme") === "dark-theme") {
       setDarkModeText(darkModeTextOptions.active);
+    }
+    else {
+      setDarkModeText(darkModeTextOptions.default);
     }
   };
 
