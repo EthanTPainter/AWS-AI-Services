@@ -1,20 +1,61 @@
 /* Light theme */
 .light-theme {
+  /* General */
   --background-color: #e4f0ee;
   --text-color: #000000;
-  --block-background: radial-gradient(
+
+  /* Block */
+  --block-background-color: radial-gradient(
     81.02% 81.02% at 62.5% -38.41%,
     rgba(87, 206, 243, 0.38) 0%,
     #56c0a7 33.33%,
     #56c0a8 66.67%,
     #56c0a7 100%
   );
+  --block-background-hover-color: radial-gradient(
+    81.02% 81.02% at 62.5% -38.41%,
+    rgba(87, 206, 243, 0.38) 0%,
+    #56c0a7 33.33%,
+    #56c0a8 66.67%,
+    #56c0a7 100%
+  );
+  --block-hover-shadow: 0 0 20px #17eb17;
+
+  /* Footer */
+  --footer-background-color: rgb(240, 225, 208);
+
+  /* Dark Mode Button */
+  --dark-mode-btn-color: #cfc4c4;
+  --dark-mode-btn-hover: 0 0 15px #17eb17;
 }
 
 /* Dark Theme */
 .dark-theme {
+  /* General */
   --background-color: #121212;
   --text-color: #ffffff;
+
+  /* Block */
+  --block-background-color: linear-gradient(
+    360deg,
+    #055f4e -23.6%,
+    #56c0a7 151.6%
+  );
+  --block-background-hover-color: radial-gradient(
+    81.02% 81.02% at 62.5% -38.41%,
+    rgba(87, 206, 243, 0.38) 0%,
+    #56c0a7 33.33%,
+    #56c0a8 66.67%,
+    #56c0a7 100%
+  );
+  --block-hover-shadow: 0 0 20px #17eb17;
+
+  /* Footer */
+  --footer-background-color: rgb(240, 225, 208);
+
+  /* Dark Mode Button */
+  --dark-mode-btn-color: #5a5757;
+  --dark-mode-btn-hover: 0 0 15px #17eb17;
 }
 
 #app {
