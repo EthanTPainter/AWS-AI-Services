@@ -53,4 +53,6 @@ The AI services tested
 
 **react-svg-loader**: An SVG loader to handle SVGs in the project
 
+**react-select**: A custom dropdown component with filter features created by Jed Watson on [GitHub](https://github.com/jedwatson/react-select)
+
 **webpack, webpack-cli, webpack-dev-server**: Basic webpack npm packages to control bundling, cli commands, and deploying on a local dev server for testing
