@@ -1,34 +1,44 @@
 # AWS AI Services
+
 Repository used to test all available AWS AI Services.
 All AWS AI services are accessible via API calls.
 
 The AI services tested
 
 ## Image & Video Rekognition
+
 [Brief Overview](https://aws.amazon.com/rekognition/)
 
 ## Textract
+
 [Brief Overview](https://aws.amazon.com/textract/)
 
-## Translate 
+## Translate
+
 [Brief Overview](https://aws.amazon.com/translate/)
 
 ## Transcribe
+
 [Brief Overivew](https://aws.amazon.com/transcribe/)
 
-## Polly 
+## Polly
+
 [Brief Overview](https://aws.amazon.com/polly/)
 
-## Comprehend & Comprehend Medical 
+## Comprehend & Comprehend Medical
+
 [Brief Overview](https://aws.amazon.com/comprehend/)
 
 ## Lex
+
 [Brief Overview](https://aws.amazon.com/lex/)
 
-## Forecast 
+## Forecast
+
 [Brief Overview](https://aws.amazon.com/forecast/)
 
 ## Personalize
+
 [Brief Overview](https://aws.amazon.com/personalize/)
 
 ## Dependency Breakdown
@@ -39,7 +49,7 @@ The AI services tested
 
 **react, react-dom**: Basic react npm packages for a react install
 
-**react-router-dom**: React router for managing how the application routes page to page 
+**react-router-dom**: React router for managing how the application routes page to page
 
 ### Dev Dependencies
 
