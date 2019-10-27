@@ -35,7 +35,7 @@ The AI services tested
 
 ### Dependencies
 
-**@emotion/core, @emotion/styled, emotion-theming**: Emotion related packages to implement CSS-in-JS
+**@emotion/core, @emotion/styled**: Emotion related packages to implement CSS-in-JS
 
 **react, react-dom**: Basic react npm packages for a react install
 
