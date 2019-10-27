@@ -19,7 +19,7 @@ export const LANGUAGES = {
     primary: "Portuguese",
     abbr: "pt",
   },
-  Spanish: {
+  SPANISH: {
     primary: "Spanish",
     abbr: "es",
   },
