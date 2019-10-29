@@ -1,38 +1,45 @@
 /** @jsx jsx */
 import React from "react";
 import { css, jsx } from "@emotion/core";
-import styled from "@emotion/styled";
 
 export const TextField = () => {
   return (
-    <div css={mainContainerStyle}>
-      <h2 css={fieldTitleStyle}>Text</h2>
-      <div css={textContainerStyle}>
-        <input placeholder="Enter text to comprehend..."></input>
-      </div>
+    <div css={MainContainerStyle}>
+      <h2 css={TitleStyle}>Enter Text</h2>
+      <textarea
+        css={TextFieldStyle}
+        placeholder="Enter text to comprehend..."
+      ></textarea>
     </div>
   );
 };
 
 // CSS
-const mainContainerStyle = css`
+const MainContainerStyle = css`
   display: grid;
   grid-template-areas:
-    ".  title   title   ."
-    ".  select  select  .";
+    ".  fieldTitle   fieldTitle   ."
+    ".  fieldText    fieldText    .";
 `;
 
-const textContainerStyle = css`
-  border-radius: 1em;
-  margin: 0 1em;
-`;
+const TextFieldStyle = css`
+  grid-area: fieldText;
+  justify-content: stretch;
 
-const textFieldStyle = css`
+  :focus {
+    border-color: #2684FF;
+    box-shadow: 0 0 0 1px #2684FF;
+  }
+
+  border-radius: 4px;
+  font-size: 1.5em;
   margin: 0 0 0 0.4em;
   padding: 0.5em;
+  height: 12em;
 `;
 
-const fieldTitleStyle = css`
+const TitleStyle = css`
+  grid-area: fieldTitle;
   justify-self: center;
   color: var(--text-color);
   font-size: 2em;
