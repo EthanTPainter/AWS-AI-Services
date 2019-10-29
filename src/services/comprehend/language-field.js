@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 
 import { LANGUAGES } from "../../enums";
@@ -15,10 +15,20 @@ const options = [
 ];
 
 export const LanguageField = () => {
+  const [selectedOption, setOption] = useState(null);
+
+  const changeHandler = input => {
+    setOption(input.value);
+  };
+
   return (
     <div id="language-field-container">
       <h2 id="language-field-title">Language</h2>
-      <Select id="language-field-select" options={options} />
+      <Select
+        id="language-field-select"
+        options={options}
+        onChange={changeHandler}
+      />
     </div>
   );
 };
