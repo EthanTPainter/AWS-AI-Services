@@ -1,14 +1,23 @@
 /** @jsx jsx */
-import React from "react";
+import React, { useState } from "react";
 import { css, jsx } from "@emotion/core";
 
+
 export const TextField = () => {
+  const [userText, setText] = useState("");
+
+  const handleChange = (input) => {
+    setText(input.target.value);
+  };
+
   return (
     <div css={MainContainerStyle}>
       <h2 css={TitleStyle}>Enter Text</h2>
       <textarea
         css={TextFieldStyle}
+        type="text"
         placeholder="Enter text to comprehend..."
+        onChange={handleChange}
       ></textarea>
     </div>
   );
