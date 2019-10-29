@@ -22,7 +22,6 @@ export const Comprehend = () => {
       />
       <LanguageField />
       <TextField />
-      <Footer />
     </div>
   );
 };
