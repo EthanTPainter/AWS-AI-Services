@@ -23,7 +23,7 @@ export const LanguageField = () => {
 
   return (
     <div id="language-field-container">
-      <h2 id="language-field-title">Language</h2>
+      <h2 id="language-field-title">Select a Language</h2>
       <Select
         id="language-field-select"
         options={options}
