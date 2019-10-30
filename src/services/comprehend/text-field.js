@@ -23,7 +23,6 @@ export const TextField = () => {
   );
 };
 
-// CSS
 const MainContainerStyle = css`
   display: grid;
   grid-template-areas:

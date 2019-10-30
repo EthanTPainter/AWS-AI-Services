@@ -4,6 +4,7 @@ import { Header, Footer, DarkModeButton } from "../../shared";
 import { DESCRIPTIONS, TITLES } from "../../enums";
 import { LanguageField } from "./language-field";
 import { TextField } from "./text-field";
+import { Buttons } from "./buttons";
 
 export const Comprehend = () => {
   const title = TITLES.COMPREHEND;
@@ -22,6 +23,7 @@ export const Comprehend = () => {
       />
       <LanguageField />
       <TextField />
+      <Buttons />
     </div>
   );
 };
