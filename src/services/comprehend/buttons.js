@@ -24,7 +24,8 @@ const ComprehendBtnStyle = css`
   justify-self: center;
 
   :hover {
-    box-shadow: var(--comprehend-btn-color);
+    transform: scale(1.1);
+    background: var(--comprehend-btn-hover-color);
   }
   
   font-size: 2em;
@@ -36,6 +37,11 @@ const ComprehendBtnStyle = css`
 const ComprehendMedBtnStyle = css`
   grid-area: compMed;
   justify-self: center;
+
+  :hover {
+    transform: scale(1.1);
+    background: var(--comprehend-med-btn-hover-color);
+  }
 
   font-size: 2em;
   padding: .5em;
