@@ -27,6 +27,13 @@
   /* Dark Mode Button */
   --dark-mode-btn-color: #cfc4c4;
   --dark-mode-btn-hover: 0 0 15px #17eb17;
+
+  /* Comprehend */
+  --comprehend-txt-field-border: #2684FF;
+  --comprehend-btn-color: #37bf84;
+  --comprehend-med-btn-color: #ff0000;
+  --comprehend-btn-hover-color: #00ff90;
+  --comprehend-med-btn-hover-color: #FF495C;
 }
 
 /* Dark Theme */
@@ -56,6 +63,13 @@
   /* Dark Mode Button */
   --dark-mode-btn-color: #5a5757;
   --dark-mode-btn-hover: 0 0 15px #17eb17;
+
+  /* Comprehend */
+  --comprehend-txt-field-border: #2684FF;
+  --comprehend-btn-color: #386510;
+  --comprehend-med-btn-color: #651210;
+  --comprehend-btn-hover-color: #6fd812;
+  --comprehend-med-btn-hover-color: #dc2420;
 }
 
 #app {
