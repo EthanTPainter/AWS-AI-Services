@@ -35,8 +35,8 @@ const TextFieldStyle = css`
   justify-content: stretch;
 
   :focus {
-    border-color: #2684FF;
-    box-shadow: 0 0 0 1px #2684FF;
+    border-color: var(--comprehend-txt-field-border);
+    box-shadow: 0 0 0 1px var(--comprehend-txt-field-border);
   }
 
   border-radius: 4px;
