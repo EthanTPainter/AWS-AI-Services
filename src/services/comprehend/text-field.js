@@ -1,13 +1,10 @@
 /** @jsx jsx */
-import React, { useState } from "react";
+import React from "react";
 import { css, jsx } from "@emotion/core";
 
-
-export const TextField = () => {
-  const [userText, setText] = useState("");
-
-  const handleChange = (input) => {
-    setText(input.target.value);
+export const TextField = props => {
+  const handleChange = input => {
+    props.setText(input.target.value);
   };
 
   return (

@@ -14,11 +14,9 @@ const options = [
   { value: LANGUAGES.SPANISH.abbr, label: LANGUAGES.SPANISH.primary },
 ];
 
-export const LanguageField = () => {
-  const [selectedOption, setOption] = useState(null);
-
+export const LanguageField = props => {
   const changeHandler = input => {
-    setOption(input.value);
+    props.setLanguage(input.value);
   };
 
   return (
