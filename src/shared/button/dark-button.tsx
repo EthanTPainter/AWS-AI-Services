@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React, { FunctionComponent } from "react";
 
 import "../../css/shared/dark-mode.css";
 
-export const DarkModeButton = props => {
+export const DarkModeButton = () => {
   const darkModeTextOptions = {
     default: "Dark Mode",
     active: "Active",
     enable: "Enable",
     disable: "Disable",
   };
-  const [darkModeText, setDarkModeText] = useState(darkModeTextOptions.default);
+  const [darkModeText, setDarkModeText] = React.useState(
+    darkModeTextOptions.default
+  );
 
   // function to set a given theme/color-scheme
-  const setTheme = themeName => {
+  const setTheme = (themeName: string) => {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
   };
@@ -52,8 +54,7 @@ export const DarkModeButton = props => {
   const onMouseEnterHandler = () => {
     if (localStorage.getItem("theme") === "dark-theme") {
       setDarkModeText(darkModeTextOptions.disable);
-    }
-    else {
+    } else {
       setDarkModeText(darkModeTextOptions.enable);
     }
   };
@@ -61,8 +62,7 @@ export const DarkModeButton = props => {
   const onMouseLeaveHandler = () => {
     if (localStorage.getItem("theme") === "dark-theme") {
       setDarkModeText(darkModeTextOptions.active);
-    }
-    else {
+    } else {
       setDarkModeText(darkModeTextOptions.default);
     }
   };

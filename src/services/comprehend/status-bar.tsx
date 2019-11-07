@@ -2,7 +2,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/core";
 
-const getColor = percent => {
+const getColor = (percent: number) => {
   console.log(`Percent: ${percent}`);
   if (percent <= 15) {
     return "#f00";
@@ -20,7 +20,7 @@ const getColor = percent => {
   }
 };
 
-export const TestProgressBar = props => {
+export const TestProgressBar = (props: any) => {
   const resultTerm = "TERM";
   const percent = 15;
   const color = getColor(percent);

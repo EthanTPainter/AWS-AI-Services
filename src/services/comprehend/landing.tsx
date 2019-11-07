@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { Header, Footer, DarkModeButton } from "../../shared";
+import { Header, DarkModeButton } from "../../shared";
 import { DESCRIPTIONS, TITLES } from "../../enums";
 import { LanguageField } from "./language-field";
 import { TextField } from "./text-field";
 import { Buttons } from "./buttons";
 
 export const Comprehend = () => {
-  const [text, setText] = useState("");
-  const [language, setLanguage] = useState("");
+  const [text, setText] = React.useState("");
+  const [language, setLanguage] = React.useState("");
 
   const title = TITLES.COMPREHEND;
   const description = DESCRIPTIONS.COMPREHEND_PART_ONE;

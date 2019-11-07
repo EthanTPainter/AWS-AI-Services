@@ -1,3 +1,3 @@
 export { TITLES } from "./titles";
 export { DESCRIPTIONS } from "./descriptions";
-export { LANGUAGES } from "./languages";
+export { LANGUAGE_PRIMARIES, LANGUAGE_ABBRS } from "./languages";

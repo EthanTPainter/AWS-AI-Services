@@ -1,10 +1,15 @@
 /** @jsx jsx */
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { css, jsx } from "@emotion/core";
 
-export const TextField = props => {
-  const handleChange = input => {
-    props.setText(input.target.value);
+type TextFieldProps = {
+  setText: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export const TextField: FunctionComponent<TextFieldProps> = ({ setText }) => {
+  // Window Event
+  const handleChange = (input: any) => {
+    setText(input.target.value);
   };
 
   return (
@@ -12,7 +17,6 @@ export const TextField = props => {
       <h2 css={TitleStyle}>Enter Text</h2>
       <textarea
         css={TextFieldStyle}
-        type="text"
         placeholder="Enter text to comprehend..."
         onChange={handleChange}
       ></textarea>

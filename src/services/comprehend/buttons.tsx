@@ -1,12 +1,18 @@
 /** @jsx jsx */
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { css, jsx } from "@emotion/core";
 
-export const Buttons = props => {
+type ButtonProps = {
+  readonly: boolean;
+  text: string;
+};
+
+export const Buttons: FunctionComponent<ButtonProps> = ({ readonly, text }) => {
   // Select specific btn styles based on readonly prop
   let CompBtnStyle = null;
   let CompMedBtnStyle = null;
-  if (props.readonly) {
+
+  if (readonly) {
     CompBtnStyle = ComprehendReadBtnStyle;
     CompMedBtnStyle = ComprehendReadMedBtnStyle;
   } else {
@@ -78,5 +84,5 @@ const ComprehendReadMedBtnStyle = css`
   font-size: 2em;
   padding: 0.5em;
   border-radius: 2em;
-  background: #dddddd
+  background: #dddddd;
 `;

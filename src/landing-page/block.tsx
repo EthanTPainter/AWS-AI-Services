@@ -1,6 +1,7 @@
 import React from "react";
 
 import { TITLES } from "../enums";
+
 import ComprehendServiceSvg from "../../assets/package-images/Comprehend.svg";
 import ForecastServiceSvg from "../../assets/package-images/Forecast.svg";
 import LexServiceSvg from "../../assets/package-images/Lex.svg";
@@ -13,9 +14,9 @@ import TranslateServiceSvg from "../../assets/package-images/Translate.svg";
 
 import "../css/landing-page/block.css";
 
-export const ServiceBlock = props => {
+export const ServiceBlock = (props: { name: string; history: any }) => {
   // After selecting a service, redirect to the service page
-  const onServiceSelect = (name, history) => {
+  const onServiceSelect = (name: string, history: any) => {
     switch (name) {
       case TITLES.COMPREHEND:
         history.push("/comprehend");
@@ -57,7 +58,7 @@ export const ServiceBlock = props => {
   );
 };
 
-const renderServiceSvg = name => {
+const renderServiceSvg = (name: string) => {
   switch (name) {
     case TITLES.COMPREHEND:
       return <ComprehendServiceSvg />;

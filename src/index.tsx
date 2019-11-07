@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { FunctionComponent } from "react";
+const ReactDOM = require("react-dom");
 import { Route, HashRouter as Router } from "react-router-dom";
 
-import { App } from "./App.js";
+import { App } from "./App";
 import { Comprehend } from "./services/comprehend";
 import { Forecast } from "./services/forecast";
 import { Lex } from "./services/lex";
@@ -12,9 +12,9 @@ import { Rekognition } from "./services/rekognition";
 import { Textract } from "./services/textract";
 import { Transcribe } from "./services/transcribe";
 import { Translate } from "./services/translate";
-import { NotFound } from "./not-found.js";
+import { NotFound } from "./not-found";
 
-const routing = (
+const Routing: FunctionComponent = () => (
   <Router>
     <Route exact path="/" component={App} />
     <Route exact path="/comprehend" component={Comprehend} />
@@ -30,4 +30,4 @@ const routing = (
   </Router>
 );
 
-ReactDOM.render(routing, document.getElementById("root"));
+ReactDOM.render(<Routing />, document.getElementById("root"));
