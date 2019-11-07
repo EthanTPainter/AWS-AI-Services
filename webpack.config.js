@@ -2,8 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   mode: "production",
+  devtool: "source-map",
   module: {
     rules: [
       // JSX Loader
@@ -13,6 +14,21 @@ module.exports = {
         loader: "babel-loader",
         options: { presets: ["@babel/env"] },
       },
+      // TS Loader
+      {
+        test: /\.ts(x?)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          {
+            loader: "ts-loader",
+          },
+        ],
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader",
+      },
       // CSS Loader
       {
         test: /\.css$/,
@@ -21,22 +37,12 @@ module.exports = {
       // SVG Loader
       {
         test: /\.svg$/,
-        use: [
-          {
-            loader: "babel-loader",
-          },
-          {
-            loader: "react-svg-loader",
-            options: {
-              jsx: true, //true outputs JSX tags
-            },
-          },
-        ],
-      },
+        use: ['@svgr/webpack'],
+      }
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   output: {
     path: path.resolve(__dirname, "dist/"),

@@ -51,17 +51,24 @@ The AI services tested
 
 **react-router-dom**: React router for managing how the application routes page to page
 
+**typescript**: Typescript language for adding types and type enforcement
+
 ### Dev Dependencies
 
-**@babel/core, @babel/present-env, @babel/preset-react, babel-loader**: Basic babel npm packages
+**@babel/core, @babel/present-env, @babel/preset-react, @babel/preset-typescript, babel-loader**: Basic babel npm packages for envs, react, and typescript
 
 **@storybook/react**: Storybook npm package for creating and testing individual components outside of the main application
 
+**@types/react, @types/react-dom, @types/react-router-dom, @types/react-select**: Types associated with Reat, React Dom, and React Router Dom. Also includes
+the types for the react select component.
+
 **css-loader, style-loader**: Basic style loaders for handling css and style files
+
+**source-map-loader, ts-loader**: Loaders for source mapping and typescript
 
 **mocha**: Testing library (in case I actually use this in the future. May rely on Cypress for most testing)
 
-**react-svg-loader**: An SVG loader to handle SVGs in the project
+**@svgr/webpack**: An SVG loader to manage SVGs
 
 **react-select**: A custom dropdown component with filter features created by Jed Watson on [GitHub](https://github.com/jedwatson/react-select)
 
