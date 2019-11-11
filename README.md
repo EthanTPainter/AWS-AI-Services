@@ -47,6 +47,10 @@ The AI services tested
 
 **@emotion/core, @emotion/styled**: Emotion related packages to implement CSS-in-JS
 
+**aws-sdk**: AWS SDK for Node js environments
+
+**axios**: Request/Response library to assist in making http requests
+
 **react, react-dom**: Basic react npm packages for a react install
 
 **react-router-dom**: React router for managing how the application routes page to page
