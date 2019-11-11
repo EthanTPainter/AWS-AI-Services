@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from "react";
-
-import "../../css/shared/dark-mode.css";
+/** @jsx jsx */
+import React from "react";
+import { css, jsx } from "@emotion/core";
 
 export const DarkModeButton = () => {
   const darkModeTextOptions = {
@@ -69,12 +69,31 @@ export const DarkModeButton = () => {
 
   return (
     <div
-      id="dark-mode-btn"
+      css={DarkModeBtnStyle}
       onClick={handleDarkModeClick}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
-      <h2 id="dark-mode-txt">{darkModeText}</h2>
+      <h2 css={DarkModeTextStyle}>{darkModeText}</h2>
     </div>
   );
 };
+
+const DarkModeBtnStyle = css`
+  background: var(--dark-mode-btn-color);
+  width: 10em;
+  height: 3em;
+  border-radius: 70px;
+  margin: 2em 0 0 7em;
+
+  :hover {
+    box-shadow: var(--dark-mode-btn-hover);
+  }
+`;
+
+const DarkModeTextStyle = css`
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  padding-top: 0.5em;
+`;
