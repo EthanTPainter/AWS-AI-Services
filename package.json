@@ -12,8 +12,8 @@
     "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
     "lint": "npm run lint:src && npm run lint:test",
-    "lint:src": "eslint src/**/*.js",
-    "lint:test": "eslint test/**/*.ts",
+    "lint:src": "eslint src/**/*.js && eslint src/**/*.tsx",
+    "lint:test": "eslint test/**/*.tsx",
     "storybook": "start-storybook",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
@@ -30,6 +30,17 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EthanTPainter/AWS-AI-Services.git"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "useTabs": true,
+    "tabWidth": 2,
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "semi": true,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "trailingComma": "es5"
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
@@ -54,7 +65,9 @@
     "@types/react-select": "^3.0.8",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
     "mocha": "^6.2.0",
+    "prettier": "^1.19.1",
     "react-select": "^3.0.8",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
