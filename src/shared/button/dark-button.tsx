@@ -29,7 +29,7 @@ export const DarkModeButton = () => {
   };
 
   // Immediately invoked function to set the theme on initial load
-  (function() {
+  (function () {
     if (localStorage.getItem("theme") === "dark-theme") {
       setTheme("dark-theme");
     } else {
@@ -79,7 +79,7 @@ export const DarkModeButton = () => {
   );
 };
 
-const DarkModeBtnStyle = css`
+const DarkModeBtnStyle = css`{
   background: var(--dark-mode-btn-color);
   width: 10em;
   height: 3em;
@@ -88,12 +88,13 @@ const DarkModeBtnStyle = css`
 
   :hover {
     box-shadow: var(--dark-mode-btn-hover);
+    background: var(--dark-mode-btn-hover-color);
+    color: var(--dark-mode-btn-hover-text);
   }
 `;
 
-const DarkModeTextStyle = css`
-  color: var(--text-color);
+const DarkModeTextStyle = css`{
   text-align: center;
   margin: 0;
   padding-top: 0.5em;
-`;
+}`;

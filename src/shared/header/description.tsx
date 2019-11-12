@@ -1,6 +1,6 @@
+/** @jsx jsx */
 import React, { FunctionComponent } from "react";
-
-import "../../css/shared/header.css";
+import { css, jsx } from "@emotion/core";
 
 type DescriptionProps = {
   description: string;
@@ -15,15 +15,15 @@ export const Description: FunctionComponent<DescriptionProps> = ({
 }) => {
   if (thirdDescription) {
     return (
-      <div id="subheader">
-        <p>{description}</p>
+      <div css={SubheaderStyle}>
+        <p css={CenterSubheaderStyle}>{description}</p>
         <p>{secondDescription}</p>
         <p>{thirdDescription}</p>
       </div>
     );
   } else if (secondDescription) {
     return (
-      <div id="subheader">
+      <div css={SubheaderStyle}>
         <p>{description}</p>
         <p>{secondDescription}</p>
       </div>
@@ -31,8 +31,25 @@ export const Description: FunctionComponent<DescriptionProps> = ({
   } else {
     return (
       <div>
-        <p id="subheader">{description}</p>
+        <p css={SubheaderStyle}>{description}</p>
       </div>
     );
   }
 };
+
+const CenterSubheaderStyle = css`
+	 {
+		color: var(--text-color);
+		text-align: center;
+		margin: 0 6em;
+	}
+`;
+
+const SubheaderStyle = css`
+	 {
+		color: var(--text-color);
+		text-align: left;
+		font-size: 1.5em;
+		margin: 0 6em;
+	}
+`;
