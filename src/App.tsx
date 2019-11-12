@@ -4,7 +4,7 @@ import { History } from "history";
 import { ServiceGrid } from "./landing-page/grid";
 import { Header, Footer, DarkModeButton } from "./shared";
 
-import "./css/App.css";
+import "./App.css";
 
 type AppProps = {
   history: History;

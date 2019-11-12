@@ -4,7 +4,7 @@
   --background-color: #e4f0ee;
   --text-color: #000000;
 
-  /* Block */
+  /* Landing Page Blocks */
   --block-background-color: radial-gradient(
     81.02% 81.02% at 62.5% -38.41%,
     rgba(87, 206, 243, 0.38) 0%,
@@ -26,7 +26,9 @@
 
   /* Dark Mode Button */
   --dark-mode-btn-color: #cfc4c4;
+  --dark-mode-btn-hover-color: #17eb17;
   --dark-mode-btn-hover: 0 0 15px #17eb17;
+  --dark-mode-btn-hover-text: var(--text-color);
 
   /* Comprehend */
   --comprehend-txt-field-border: #2684FF;
@@ -41,9 +43,9 @@
 .dark-theme {
   /* General */
   --background-color: #121212;
-  --text-color: #ffffff;
+  --text-color: #a19e9e;
 
-  /* Block */
+  /* Landing Page Blocks */
   --block-background-color: linear-gradient(
     360deg,
     #055f4e -23.6%,
@@ -62,8 +64,10 @@
   --footer-background-color: rgb(240, 225, 208);
 
   /* Dark Mode Button */
-  --dark-mode-btn-color: #5a5757;
-  --dark-mode-btn-hover: 0 0 15px #17eb17;
+  --dark-mode-btn-color: #2d8e2c;
+  --dark-mode-btn-hover-color: #eb1717;
+  --dark-mode-btn-hover: 0 0 15px #eb1717;
+  --dark-mode-btn-hover-text: #dadada;
 
   /* Comprehend */
   --comprehend-txt-field-border: #2684FF;
