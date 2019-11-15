@@ -47,9 +47,79 @@ export const ServiceBlock = (props: { name: string; history: any }) => {
 		}
 	};
 
+	const serviceBlockColor = (
+		name: string
+	): { main: string; secondary: string; hover: string } => {
+		switch (name) {
+			case TITLES.COMPREHEND:
+				return {
+					main: "var(--comprehend-block-background-color)",
+					secondary: "var(--comprehend-block-background-hover-color)",
+					hover: "var(--comprehend-block-hover-shadow)",
+				};
+			case TITLES.FORECAST:
+				return {
+					main: "var(--forecast-block-background-color)",
+					secondary: "var(--forecast-block-background-hover-color)",
+					hover: "var(--forecast-block-hover-shadow)",
+				};
+			case TITLES.LEX:
+				return {
+					main: "var(--lex-block-background-color)",
+					secondary: "var(--lex-block-background-hover-color)",
+					hover: "var(--lex-block-hover-shadow)",
+				};
+			case TITLES.PERSONALIZE:
+				return {
+					main: "var(--personalize-block-background-color)",
+					secondary: "var(--personalize-block-background-hover-color)",
+					hover: "var(--personalize-block-hover-shadow)",
+				};
+			case TITLES.POLLY:
+				return {
+					main: "var(--polly-block-background-color)",
+					secondary: "var(--polly-block-background-hover-color)",
+					hover: "var(--polly-block-hover-shadow)",
+				};
+			case TITLES.REKOGNITION:
+				return {
+					main: "var(--rekognition-block-background-color)",
+					secondary: "var(--rekognition-block-background-hover-color)",
+					hover: "var(--rekognition-block-hover-shadow)",
+				};
+			case TITLES.TEXTRACT:
+				return {
+					main: "var(--textract-block-background-color)",
+					secondary: "var(--textract-block-background-hover-color)",
+					hover: "var(--textract-block-hover-shadow)",
+				};
+			case TITLES.TRANSCRIBE:
+				return {
+					main: "var(--transcribe-block-background-color)",
+					secondary: "var(--transcribe-block-background-hover-color)",
+					hover: "var(--transcribe-block-hover-shadow)",
+				};
+			case TITLES.TRANSLATE:
+				return {
+					main: "var(--translate-block-background-color)",
+					secondary: "var(--translate-block-background-hover-color)",
+					hover: "var(--translate-block-hover-shadow)",
+				};
+			default: {
+				return {
+					main: "var(--comprehend-block-background-color)",
+					secondary: "var(--comprehend-block-background-hover-color)",
+					hover: "var(--comprehend-block-hover-shadow)",
+				};
+			}
+		}
+	};
+
+	const colors = serviceBlockColor(props.name);
+
 	return (
 		<div
-			css={ServiceBlockStyle}
+			css={ServiceBlockStyle(colors.main, colors.secondary, colors.hover)}
 			onClick={() => onServiceSelect(props.name, props.history)}
 		>
 			<div css={ServiceImageStyle}>{renderServiceSvg(props.name)}</div>
@@ -83,30 +153,41 @@ const renderServiceSvg = (name: string) => {
 	}
 };
 
-const ServiceBlockStyle = css`{
-  display: grid;
-  grid-template-areas:
-    "image"
-    "image"
-		"name";
+const ServiceBlockStyle = (
+	mainColor: string,
+	secondColor: string,
+	hoverShadow: string
+) => css`
+	 {
+		display: grid;
+		grid-template-areas:
+			"image"
+			"image"
+			"name";
 
-  background: var(--block-background-color);
-  border-radius: 50px;
-	padding: 1em;
-	
-	:hover {
-		background: var(--block-background-hover-color);
-  	border-radius: 50px;
-  	transform: scale(1.2);
-  	box-shadow: var(--block-hover-shadow);
+		border-radius: 50px;
+		padding: 1em;
+
+		background: ${mainColor};
+
+		:hover {
+			background: ${secondColor};
+			border-radius: 50px;
+			transform: scale(1.2);
+			box-shadow: ${hoverShadow};
+		}
 	}
-}`;
+`;
 
-const ServiceImageStyle = css`{
-  margin-top: 8%;
-  grid-area: image;
-}`;
+const ServiceImageStyle = css`
+	 {
+		margin-top: 8%;
+		grid-area: image;
+	}
+`;
 
-const ServiceNameStyle = css`{
-  grid-area: name;
-}`;
+const ServiceNameStyle = css`
+	 {
+		grid-area: name;
+	}
+`;

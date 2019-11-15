@@ -4,22 +4,50 @@
   --background-color: #e4f0ee;
   --text-color: #000000;
 
-  /* Landing Page Blocks */
-  --block-background-color: radial-gradient(
-    81.02% 81.02% at 62.5% -38.41%,
-    rgba(87, 206, 243, 0.38) 0%,
-    #56c0a7 33.33%,
-    #56c0a8 66.67%,
-    #56c0a7 100%
-  );
-  --block-background-hover-color: radial-gradient(
-    81.02% 81.02% at 62.5% -38.41%,
-    rgba(87, 206, 243, 0.38) 0%,
-    #56c0a7 33.33%,
-    #56c0a8 66.67%,
-    #56c0a7 100%
-  );
-  --block-hover-shadow: 0 0 20px #17eb17;
+  /* Comprehend Service Block */
+  --comprehend-block-background-color: #67dfc2;
+  --comprehend-block-background-hover-color: #67dfc2;
+  --comprehend-block-hover-shadow: 0 0 1em #67dfc2;
+
+  /* Forecast Service Block */
+  --forecast-block-background-color: #ff8888;
+  --forecast-block-background-hover-color: #ff8888;
+  --forecast-block-hover-shadow: 0 0 1em #ff8888;
+
+  /* Lex Service Block */
+  --lex-block-background-color: #f489ff;
+  --lex-block-background-hover-color: #f489ff;
+  --lex-block-hover-shadow: 0 0 1em #f489ff;
+
+  /* Personalize Service Block */
+  --personalize-block-background-color: #6fb8fa;
+  --personalize-block-background-hover-color: #6fb8fa;
+  --personalize-block-hover-shadow: 0 0 1em #6fb8fa;
+
+  /* Polly Service Block */
+  --polly-block-background-color: #f3906f;
+  --polly-block-background-hover-color: #f3906f;
+  --polly-block-hover-shadow: 0 0 1em #f3906f;
+
+  /* Rekognition Service Block */
+  --rekognition-block-background-color: #b17bf5;
+  --rekognition-block-background-hover-color: #b17bf5;
+  --rekognition-block-hover-shadow: 0 0 1em #b17bf5;
+
+  /* Textract Service Block */
+  --textract-block-background-color: #efbe50;
+  --textract-block-background-hover-color: #efbe50;
+  --textract-block-hover-shadow: 0 0 1em #efbe50;
+
+  /* Transcribe Service Block */
+  --transcribe-block-background-color: #94fe68;
+  --transcribe-block-background-hover-color: #94fe68;
+  --transcribe-block-hover-shadow: 0 0 1em #94fe68;
+
+  /* Translate Service Block */
+  --translate-block-background-color: #ff0b7c;
+  --translate-block-background-hover-color: #ff0b7c;
+  --translate-block-hover-shadow: 0 0 1em #ff0b7c;
 
   /* Footer */
   --footer-background-color: rgb(240, 225, 208);
@@ -30,7 +58,7 @@
   --dark-mode-btn-hover: 0 0 15px #17eb17;
   --dark-mode-btn-hover-text: var(--text-color);
 
-  /* Comprehend */
+  /* Comprehend page colors */
   --comprehend-txt-field-border: #2684FF;
   --comprehend-btn-color: #37bf84;
   --comprehend-med-btn-color: #FF495C;
@@ -45,20 +73,86 @@
   --background-color: #121212;
   --text-color: #a19e9e;
 
-  /* Landing Page Blocks */
-  --block-background-color: linear-gradient(
+  /* Comprehend Service Block */
+  --comprehend-block-background-color: linear-gradient(
     360deg,
     #055f4e -23.6%,
     #56c0a7 151.6%
   );
-  --block-background-hover-color: radial-gradient(
-    81.02% 81.02% at 62.5% -38.41%,
-    rgba(87, 206, 243, 0.38) 0%,
-    #56c0a7 33.33%,
-    #56c0a8 66.67%,
-    #56c0a7 100%
+  --comprehend-block-background-hover-color: #56c0a7;
+  --comprehend-block-hover-shadow: 0 0 1em #56c0a7;
+
+  /* Forecast Service Block */
+  --forecast-block-background-color: linear-gradient(
+    360deg,
+    #651111 -23.6%,
+    #ff8888 151.6%
   );
-  --block-hover-shadow: 0 0 20px #17eb17;
+  --forecast-block-background-hover-color: #ff8888;
+  --forecast-block-hover-shadow: 0 0 1em #ff8888;
+
+  /* Lex Service Block */
+  --lex-block-background-color: linear-gradient(
+    360deg,
+    #45114a -23.6%,
+    #f489ff 151.6%
+  );
+  --lex-block-background-hover-color: #f489ff;
+  --lex-block-hover-shadow: 0 0 1em #f489ff;
+
+  /* Personalize Service Block */
+  --personalize-block-background-color: linear-gradient(
+    360deg,
+    #0a2d4c -23.6%,
+    #6fb8fa 151.6%
+  );
+  --personalize-block-background-hover-color: #6fb8fa;
+  --personalize-block-hover-shadow: 0 0 1em #6fb8fa;
+
+  /* Polly Service Block */
+  --polly-block-background-color: linear-gradient(
+    360deg,
+    #6b2812 -23.6%,
+    #f3906f 151.6%
+  );
+  --polly-block-background-hover-color: #f3906f;
+  --polly-block-hover-shadow: 0 0 1em #f3906f;
+
+  /* Rekognition Service Block */
+  --rekognition-block-background-color: linear-gradient(
+    360deg,
+    #2d055f -23.6%,
+    #b17bf5 151.6%
+  );
+  --rekognition-block-background-hover-color: #b17bf5;
+  --rekognition-block-hover-shadow: 0 0 1em #b17bf5;
+
+  /* Textract Service Block */
+  --textract-block-background-color: linear-gradient(
+    360deg,
+    #7b5a11 -23.6%,
+    #efbe50 151.6%
+  );
+  --textract-block-background-hover-color: #efbe50;
+  --textract-block-hover-shadow: 0 0 1em #efbe50;
+
+  /* Transcribe Service Block */
+  --transcribe-block-background-color: linear-gradient(
+    360deg,
+    #1e5109 -23.6%,
+    #94fe68 151.6%
+  );
+  --transcribe-block-background-hover-color: #94fe68;
+  --transcribe-block-hover-shadow: 0 0 1em #94fe68;
+
+  /* Translate Service Block */
+  --translate-block-background-color: linear-gradient(
+    360deg,
+    #5b052d -23.6%,
+    #ff0b7c 151.6%
+  );
+  --translate-block-background-hover-color: #ff0b7c;
+  --translate-block-hover-shadow: 0 0 1em #ff0b7c;
 
   /* Footer */
   --footer-background-color: rgb(240, 225, 208);
