@@ -2,6 +2,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/core";
 
+/* Dark Mode Button (Enable light or dark themes) */
 export const DarkModeButton = () => {
   const darkModeTextOptions = {
     default: "Dark Mode",
@@ -81,10 +82,11 @@ export const DarkModeButton = () => {
 
 const DarkModeBtnStyle = css`{
   background: var(--dark-mode-btn-color);
-  width: 10em;
+  width: 11em;
   height: 3em;
-  border-radius: 70px;
+  border-radius: 3em;
   margin: 2em 0 0 7em;
+  cursor: pointer;
 
   :hover {
     box-shadow: var(--dark-mode-btn-hover);

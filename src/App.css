@@ -55,8 +55,12 @@
   /* Dark Mode Button */
   --dark-mode-btn-color: #cfc4c4;
   --dark-mode-btn-hover-color: #17eb17;
-  --dark-mode-btn-hover: 0 0 15px #17eb17;
+  --dark-mode-btn-hover: 0 0 .75em #17eb17;
   --dark-mode-btn-hover-text: var(--text-color);
+
+  /* Return to Grid button */
+  --grid-button-color: #17eb17;
+  --grid-button-hover-shadow: 0 0 .75em #17eb17;
 
   /* Comprehend page colors */
   --comprehend-txt-field-border: #2684FF;
@@ -160,8 +164,12 @@
   /* Dark Mode Button */
   --dark-mode-btn-color: #2d8e2c;
   --dark-mode-btn-hover-color: #eb1717;
-  --dark-mode-btn-hover: 0 0 15px #eb1717;
+  --dark-mode-btn-hover: 0 0 .75em #eb1717;
   --dark-mode-btn-hover-text: #dadada;
+
+  /* Return to Grid button */
+  --grid-button-color: #2d8e2c;
+  --grid-button-hover-shadow: 0 0 .75em #17eb17;
 
   /* Comprehend */
   --comprehend-txt-field-border: #2684FF;
@@ -180,4 +188,5 @@
 
 html {
   background: var(--background-color);
+  scroll-behavior: smooth;
 }

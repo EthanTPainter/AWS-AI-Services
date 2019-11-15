@@ -3,7 +3,7 @@ const ReactDOM = require("react-dom");
 import { Route, HashRouter as Router } from "react-router-dom";
 
 import { App } from "./App";
-import { Comprehend } from "./services/comprehend";
+import { ComprehendLanding } from "./services/comprehend/landing-page";
 import { Forecast } from "./services/forecast";
 import { Lex } from "./services/lex";
 import { Personalize } from "./services/personalize";
@@ -17,7 +17,7 @@ import { NotFound } from "./not-found";
 const Routing: FunctionComponent = () => (
   <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/comprehend" component={Comprehend} />
+    <Route exact path="/comprehend" component={ComprehendLanding} />
     <Route exact path="/forecast" component={Forecast} />
     <Route exact path="/lex" component={Lex} />
     <Route exact path="/personalize" component={Personalize} />
@@ -26,7 +26,7 @@ const Routing: FunctionComponent = () => (
     <Route exact path="/textract" component={Textract} />
     <Route exact path="/transcribe" component={Transcribe} />
     <Route exact path="/translate" component={Translate} />
-    <Route exact path ="/error" component={NotFound} />
+    <Route exact path="/error" component={NotFound} />
   </Router>
 );
 
