@@ -2,9 +2,10 @@ import React, { FunctionComponent } from "react";
 import { History } from "history";
 
 import { ServiceGrid } from "./landing-page/grid";
-import { Header, Footer, DarkModeButton } from "./shared";
+import { Header, Footer } from "./shared";
 
 import "./App.css";
+import { ButtonBar } from "./shared/button";
 
 type AppProps = {
   history: History;
@@ -14,7 +15,7 @@ export const App: FunctionComponent<AppProps> = ({ history }) => {
   return (
     <div id="app">
       <div>
-        <DarkModeButton />
+        <ButtonBar hideReturnBtn={true} />
         <Header
           title="AWS AI Services"
           mainDescription="Below are a list of Artifical Intelligence (AI) Services provided by

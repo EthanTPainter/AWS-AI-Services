@@ -1,1 +1,1 @@
-export { ButtonBar } from "./bar";
+export { ButtonBar } from "./button-bar";

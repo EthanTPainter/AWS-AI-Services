@@ -3,11 +3,14 @@ import React, { FunctionComponent } from "react";
 import { css, jsx } from "@emotion/core";
 import { useHistory } from "react-router-dom";
 
+type GridButtonProps = {
+	hidden: string;
+};
+
 /* Button to return to the Grid (website landing page)
    Button should be hidden when on the Grid
 */
-
-export const GridButton: FunctionComponent = () => {
+export const GridButton: FunctionComponent<GridButtonProps> = ({ hidden }) => {
 	const history = useHistory();
 
 	// On click, send to grid
@@ -16,22 +19,15 @@ export const GridButton: FunctionComponent = () => {
 	};
 
 	return (
-		<div css={ContainerStyle}>
-			<div css={GridButtonStyle} onClick={handleButtonClick}>
-				<h2 css={GridButtonTextStyle}>Return To Grid</h2>
-			</div>
+		<div css={GridButtonStyle(hidden)} onClick={handleButtonClick}>
+			<h2 css={GridButtonTextStyle}>Return To Grid</h2>
 		</div>
 	);
 };
 
-const ContainerStyle = (visible: string) => css`
+const GridButtonStyle = (hidden: string) => css`
 	 {
-		visible: ${visible};
-	}
-`;
-
-const GridButtonStyle = () => css`
-	 {
+		visibility: ${hidden};
 		width: 11em;
 		height: 3em;
 
