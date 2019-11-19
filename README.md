@@ -51,7 +51,7 @@ The AI services tested
 
 **axios**: Request/Response library to assist in making http requests
 
-**react, react-dom**: Basic react npm packages for a react install
+**react, react-dom**: Experimental react version to test concurrent mode with Suspense API
 
 **react-router-dom**: React router for managing how the application routes page to page
 
