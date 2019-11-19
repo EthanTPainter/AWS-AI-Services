@@ -1,0 +1,1 @@
+export { ComprehendLanding } from "./landing";

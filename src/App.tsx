@@ -15,7 +15,7 @@ export const App: FunctionComponent<AppProps> = ({ history }) => {
   return (
     <div id="app">
       <div>
-        <ButtonBar hideReturnBtn={true} />
+        <ButtonBar hideReturnBtn={true} hideServiceBtn={true} />
         <Header
           title="AWS AI Services"
           mainDescription="Below are a list of Artifical Intelligence (AI) Services provided by

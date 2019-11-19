@@ -1,1 +1,0 @@
-export { Comprehend } from "./landing";
