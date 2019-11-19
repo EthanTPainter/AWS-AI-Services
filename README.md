@@ -61,8 +61,6 @@ The AI services tested
 
 **@babel/core, @babel/present-env, @babel/preset-react, @babel/preset-typescript, babel-loader**: Basic babel npm packages for envs, react, and typescript
 
-**@storybook/react**: Storybook npm package for creating and testing individual components outside of the main application
-
 **@types/react, @types/react-dom, @types/react-router-dom, @types/react-select**: Types associated with Reat, React Dom, and React Router Dom. Also includes
 the types for the react select component.
 
@@ -71,6 +69,8 @@ the types for the react select component.
 **source-map-loader, ts-loader**: Loaders for source mapping and typescript
 
 **mocha**: Testing library (in case I actually use this in the future. May rely on Cypress for most testing)
+
+**eslint, prettier**: Linter and code formatter for enforcing specific code standards
 
 **@svgr/webpack**: An SVG loader to manage SVGs
 
