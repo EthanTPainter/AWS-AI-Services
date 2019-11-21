@@ -32,4 +32,8 @@ const Routing: FunctionComponent = () => (
   </Router>
 );
 
+// Experimental rendering
+// ReactDOM.createRoot(document.getElementById("root")).render(<Routing />);
+
+// Non experimental react rendering
 ReactDOM.render(<Routing />, document.getElementById("root"));

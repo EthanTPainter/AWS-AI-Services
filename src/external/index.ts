@@ -1,1 +1,1 @@
-import * as AWSRequests from "./aws";
+export * from "./aws";
