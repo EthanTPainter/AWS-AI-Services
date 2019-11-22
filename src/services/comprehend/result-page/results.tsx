@@ -1,11 +1,53 @@
 /** @jsx jsx */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { css, jsx } from "@emotion/core";
-import { useHistory } from "react-router-dom";
 import { ButtonBar, Header } from "../../../shared";
+import { detectEntities } from "../../../external/aws";
+
+// Retrieve entities for the comprehend service
+const getComprehendEntities = (text: string, languageCode: string) => {
+	const [entities, setEntities] = useState([] as string[]);
+
+	const [isLoading, setIsLoading] = useState(false);
+	const [isError, setIsError] = useState(false);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			// Request data for detecting entities
+			setIsLoading(true);
+			setIsError(false);
+
+			try {
+				const entities = await detectEntities(text, languageCode);
+				if (entities) {
+					const response = entities.map((entity) => {
+						const answer = `Term: ${entity.Text}, Score: ${entity.Score}\n`;
+						return answer;
+					});
+					setEntities(response);
+				}
+			} catch (error) {
+				console.log(`Error: ${error.message}`);
+				setIsError(true);
+			}
+
+			setIsLoading(false);
+		};
+
+		fetchData();
+	}, [text, languageCode]);
+
+	return [{ entities, isLoading, isError }];
+};
 
 export const ComprehendResults = () => {
-	let history = useHistory();
+	// Retrieve text and language code for detecting entities
+	const text = localStorage.getItem("comprehendText") || "Bill Gates";
+	const languageCode = localStorage.getItem("comprehendLanguageCode") || "en";
+	const [{ entities, isLoading, isError }] = getComprehendEntities(
+		text,
+		languageCode
+	);
 
 	return (
 		<div>
@@ -15,6 +57,18 @@ export const ComprehendResults = () => {
 				serviceName="Comprehend"
 			/>
 			<Header title="Results" mainDescription="Let's see the results" />
+
+			{isError && <div>Uh oh, looks like something went wrong...</div>}
+
+			{isLoading ? (
+				<div>Loading results...</div>
+			) : (
+				<ul>
+					{entities.map((entity) => (
+						<ul>{entity}</ul>
+					))}
+				</ul>
+			)}
 		</div>
 	);
 };

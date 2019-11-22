@@ -3,6 +3,8 @@
 Repository used to test all available AWS AI Services.
 All AWS AI services are accessible via API calls.
 
+<br>
+
 The AI services tested
 
 ## Image & Video Rekognition

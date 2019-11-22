@@ -19,12 +19,13 @@ export const Buttons: FunctionComponent<ButtonProps> = ({
 
 	const handleClick = () => {
 		if (text && readonly === false) {
-			console.log(`Text: ${text}\nLanguage Code: ${languageCode}`);
 			const resultState = {
 				text,
 				languageCode,
 			};
-			history.push("/comprehend/results", resultState);
+			localStorage.setItem("comprehendText", text);
+			localStorage.setItem("comprehendLanguageCode", languageCode);
+			history.push("/comprehend/results");
 		}
 	};
 

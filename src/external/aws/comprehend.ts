@@ -5,13 +5,17 @@ type SentimentType = {
 	sentimentScore: any;
 };
 
+const comprehendClient = new Comprehend({
+	region: "us-east-1",
+	apiVersion: "2017-11-27",
+});
+
 export const detectEntities = async (text: string, languageCode: string) => {
 	const parameters = {
 		LanguageCode: languageCode,
 		Text: text,
 	};
 
-	const comprehendClient = new Comprehend({ apiVersion: "2017-11-27" });
 	const response = await comprehendClient.detectEntities(parameters).promise();
 
 	return response.Entities;
@@ -23,7 +27,6 @@ export const detectKeyPhrases = async (text: string, languageCode: string) => {
 		Text: text,
 	};
 
-	const comprehendClient = new Comprehend({ apiVersion: "2017-11-27" });
 	const response = await comprehendClient
 		.detectKeyPhrases(parameters)
 		.promise();
@@ -37,7 +40,6 @@ export const detectLanguage = async (text: string, languageCode: string) => {
 		Text: text,
 	};
 
-	const comprehendClient = new Comprehend({ apiVersion: "2017-11-27" });
 	const response = await comprehendClient
 		.detectDominantLanguage(parameters)
 		.promise();
@@ -54,7 +56,6 @@ export const detectSentiment = async (
 		Text: text,
 	};
 
-	const comprehendClient = new Comprehend({ apiVersion: "2017-11-27" });
 	const response = await comprehendClient.detectSentiment(parameters).promise();
 
 	return {
@@ -69,7 +70,6 @@ export const detectSyntax = async (text: string, languageCode: string) => {
 		Text: text,
 	};
 
-	const comprehendClient = new Comprehend({ apiVersion: "2017-11-27" });
 	const response = await comprehendClient.detectSyntax(parameters).promise();
 
 	return response.SyntaxTokens;
