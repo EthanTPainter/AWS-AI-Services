@@ -3,6 +3,58 @@ import React, { useState, useEffect } from "react";
 import { css, jsx } from "@emotion/core";
 import { ButtonBar, Header } from "../../../shared";
 import { detectEntities } from "../../../external/aws";
+import { ComprehendDataBlock } from "./data-block";
+import { ComprehendPreview } from "./preview";
+import { ResultsOptionsBar } from "./results-options-bar";
+
+export const ComprehendResults = () => {
+	// Retrieve text and language code for detecting entities
+	const text = localStorage.getItem("comprehendText") || "";
+	const languageCode = localStorage.getItem("comprehendLanguageCode") || "en";
+
+	/*
+	const [{ entities, isLoading, isError }] = getComprehendEntities(
+		text,
+		languageCode
+	);
+	*/
+
+	return (
+		<div>
+			<ButtonBar
+				hideReturnBtn={false}
+				hideServiceBtn={false}
+				serviceName="Comprehend"
+			/>
+			<Header title="Results" />
+			<ResultsOptionsBar currentlySelected="entities" />
+		</div>
+	);
+	/*
+	return (
+		<div>
+			<ButtonBar
+				hideReturnBtn={false}
+				hideServiceBtn={false}
+				serviceName="Comprehend"
+			/>
+			<Header title="Results" mainDescription="Let's see the results" />
+
+			{isError && <div>Uh oh, looks like something went wrong...</div>}
+
+			{isLoading ? (
+				<div>Loading results...</div>
+			) : (
+				<ul>
+					{entities.map((entity) => (
+						<ul>{entity}</ul>
+					))}
+				</ul>
+			)}
+		</div>
+	);
+	*/
+};
 
 // Retrieve entities for the comprehend service
 const getComprehendEntities = (text: string, languageCode: string) => {
@@ -38,37 +90,4 @@ const getComprehendEntities = (text: string, languageCode: string) => {
 	}, [text, languageCode]);
 
 	return [{ entities, isLoading, isError }];
-};
-
-export const ComprehendResults = () => {
-	// Retrieve text and language code for detecting entities
-	const text = localStorage.getItem("comprehendText") || "Bill Gates";
-	const languageCode = localStorage.getItem("comprehendLanguageCode") || "en";
-	const [{ entities, isLoading, isError }] = getComprehendEntities(
-		text,
-		languageCode
-	);
-
-	return (
-		<div>
-			<ButtonBar
-				hideReturnBtn={false}
-				hideServiceBtn={false}
-				serviceName="Comprehend"
-			/>
-			<Header title="Results" mainDescription="Let's see the results" />
-
-			{isError && <div>Uh oh, looks like something went wrong...</div>}
-
-			{isLoading ? (
-				<div>Loading results...</div>
-			) : (
-				<ul>
-					{entities.map((entity) => (
-						<ul>{entity}</ul>
-					))}
-				</ul>
-			)}
-		</div>
-	);
 };
