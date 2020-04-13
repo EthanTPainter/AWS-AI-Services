@@ -6,6 +6,7 @@ import { detectEntities } from "../../../external/aws";
 import { ComprehendDataBlock } from "./data-block";
 import { ComprehendPreview } from "./preview";
 import { ResultsOptionsBar } from "./results-options-bar";
+import { TabOptions } from "./results-options-bar";
 
 export const ComprehendResults = () => {
 	// Retrieve text and language code for detecting entities
@@ -27,7 +28,12 @@ export const ComprehendResults = () => {
 				serviceName="Comprehend"
 			/>
 			<Header title="Results" />
-			<ResultsOptionsBar currentlySelected="entities" />
+			<ResultsOptionsBar currentlySelected={TabOptions.ENTITIES} />
+			<ComprehendDataBlock
+				term="Data"
+				type="Organization"
+				roundedScore={85.88}
+			></ComprehendDataBlock>
 		</div>
 	);
 	/*

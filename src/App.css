@@ -186,6 +186,7 @@
 	/* Comprehend results page */
 	--results-option-bar-hover-color: #67dfc2;
 	--results-option-bar-hover-shadow: 0 0 .5em #67dfc2;
+	--results-option-bar-dark-background: #b0abab;
 }
 
 #app {
