@@ -14,6 +14,6 @@ const HeaderStyle = css`
 	 {
 		color: var(--text-color);
 		text-align: center;
-		font-size: 5em;
+		font-size: 3em;
 	}
 `;

@@ -55,12 +55,12 @@
 	/* Dark Mode Button */
 	--dark-mode-btn-color: #cfc4c4;
 	--dark-mode-btn-hover-color: #17eb17;
-	--dark-mode-btn-hover: 0 0 0.75em #17eb17;
+	--dark-mode-btn-hover: ;
 	--dark-mode-btn-hover-text: var(--text-color);
 
 	/* Return to Grid button */
 	--grid-button-color: #17eb17;
-	--grid-button-hover-shadow: 0 0 0.75em #17eb17;
+	--grid-button-hover-shadow: ;
 
 	/* Comprehend page colors */
 	--comprehend-txt-field-border: #2684ff;
@@ -73,6 +73,8 @@
 	/* Comprehend results page */
 	--results-option-bar-hover-color: #67dfc2;
 	--results-option-bar-hover-shadow: 0 0 .5em #67dfc2;
+	--results-border-color: black;
+	--results-border-term-color: black;
 }
 
 /* Dark Theme */
@@ -187,6 +189,8 @@
 	--results-option-bar-hover-color: #67dfc2;
 	--results-option-bar-hover-shadow: 0 0 .5em #67dfc2;
 	--results-option-bar-dark-background: #b0abab;
+	--results-border-line-color: white;
+	--results-border-term-color: white;
 }
 
 #app {

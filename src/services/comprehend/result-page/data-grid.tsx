@@ -1,7 +1,15 @@
 /** @jsx jsx */
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { css, jsx } from "@emotion/core";
 
-export const ComprehendDataGrid = () => {
+type ComprehendDataGridProps = {
+};
 
+export const ComprehendDataGrid: FunctionComponent<ComprehendDataGridProps> = ({
+  
+}) => {
+  return (
+    <div>
+    </div>
+  );
 };

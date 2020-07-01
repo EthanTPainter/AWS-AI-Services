@@ -47,6 +47,6 @@ export const TestProgressBar: FunctionComponent<StatusBarProps> = ({
 
 const ProgressBarStyle = css`
 	background-color: lightgrey;
-	height: .5rem;
+	height: 1rem;
 	border-radius: 20em;
 `;

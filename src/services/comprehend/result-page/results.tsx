@@ -13,13 +13,12 @@ export const ComprehendResults = () => {
 	const text = localStorage.getItem("comprehendText") || "";
 	const languageCode = localStorage.getItem("comprehendLanguageCode") || "en";
 
-	/*
 	const [{ entities, isLoading, isError }] = getComprehendEntities(
 		text,
 		languageCode
 	);
-	*/
 
+	/*
 	return (
 		<div>
 			<ButtonBar
@@ -36,7 +35,8 @@ export const ComprehendResults = () => {
 			></ComprehendDataBlock>
 		</div>
 	);
-	/*
+	*/
+
 	return (
 		<div>
 			<ButtonBar
@@ -59,7 +59,7 @@ export const ComprehendResults = () => {
 			)}
 		</div>
 	);
-	*/
+
 };
 
 // Retrieve entities for the comprehend service

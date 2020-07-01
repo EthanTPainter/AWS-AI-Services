@@ -40,7 +40,7 @@ const ContainerStyle = css`
   grid-template-areas:
     ".  title   title   ."
     ".  select  select  .";
-  margin: 3em 8em;
+  margin: 1em 7em;
   padding: 1em 0em 3em 0em;
 `;
 
