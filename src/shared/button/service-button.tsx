@@ -37,7 +37,7 @@ const ServiceButtonStyle = (hidden: string) => css`
 		height: 3em;
 
 		cursor: pointer;
-		border-radius: 3em;
+		border-radius: 1em;
 		margin: 2em 0 0 7em;
 		background: var(--dark-mode-btn-color);
 

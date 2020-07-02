@@ -164,16 +164,10 @@ const ServiceBlockStyle = (
 			"image"
 			"image"
 			"name";
-
-		border-radius: 50px;
-		padding: 1em;
-
 		background: ${mainColor};
 
 		:hover {
 			background: ${secondColor};
-			border-radius: 50px;
-			transform: scale(1.2);
 			box-shadow: ${hoverShadow};
 		}
 	}

@@ -65,7 +65,6 @@ const ServiceGridStyle = css`{
     "comp comp  fore    fore    le        le    personal  personal"
     "pol  pol   rekog   rekog   tex       tex   transc    transc"
     ".    .     .       transl  transl    .     .         .";
-  row-gap: 2em;
   margin: 3em 10em 2em 10em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -76,45 +75,36 @@ const ServiceGridStyle = css`{
 */
 const ComprehendStyle = css`{
   grid-area: comp;
-  padding: 2em;
 }`;
 
 const ForecastStyle = css`{
   grid-area: fore;
-  padding: 2em;
 }`;
 
 const LexStyle = css`{
   grid-area: le;
-  padding: 2em;
 }`;
 
 const PersonalizeStyle = css`{
   grid-area: personal;
-  padding: 2em;
 }`;
 
 const PollyStyle = css`{
   grid-area: pol;
-  padding: 2em;
 }`;
 
 const RekognitionStyle = css`{
   grid-area: rekog;
-  padding: 2em;
 }`;
 
 const TextractStyle = css`{
   grid-area: tex;
-  padding: 2em;
 }`;
 
 const TranscribeStyle = css`{
   grid-area: transc;
-  padding: 2em;
 }`;
 
 const TranslateStyle = css`{
   grid-area: transl;
-  padding: 2em;
 }`;
