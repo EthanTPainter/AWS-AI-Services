@@ -1,0 +1,54 @@
+{
+  "name": "aws-ai-services",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Tests the AWS AI Services",
+  "author": "Ethan T. Painter",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production",
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
+    "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:src": "eslint src/**/*.js && eslint src/**/*.tsx",
+    "lint:test": "eslint test/**/*.tsx",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/EthanTPainter/AWS-AI-Services/issues"
+  },
+  "homepage": "https://github.com/EthanTPainter/AWS-AI-Services#readme",
+  "keywords": [
+    "AWS",
+    "AI",
+    "Services"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanTPainter/AWS-AI-Services.git"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "useTabs": true,
+    "tabWidth": 2,
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "semi": true,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.566.0",
+    "axios": "^0.19.0",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "mocha": "^8.0.1",
+    "prettier": "^1.19.1"
+  }
+}
