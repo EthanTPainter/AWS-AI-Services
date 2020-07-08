@@ -1,0 +1,5 @@
+CFT_FILE="backend-template.yaml"
+CFT_PACKAGE="$(echo $CFT_FILE | cut -f 1 -d '.').package.yaml"
+CFT_STACK_NAME="aws-ai-services-backend"
+CFT_BUCKET="ethan-painter"
+CFT_PARAMS_FILE="./parameters.json"

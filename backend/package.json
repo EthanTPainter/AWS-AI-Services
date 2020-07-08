@@ -4,14 +4,13 @@
   "private": false,
   "description": "Backend for AWS AI Services",
   "author": "Ethan T. Painter",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
     "lint": "npm run lint:src && npm run lint:test",
-    "lint:src": "eslint src/**/*.js && eslint src/**/*.tsx",
-    "lint:test": "eslint test/**/*.tsx",
+    "lint:src": "eslint src/**/*.js && eslint src/**/*.ts",
+    "lint:test": "eslint test/**/*.ts",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "bugs": {
@@ -46,6 +45,7 @@
     "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "@fluffy-spoon/substitute": "^1.145.0",
     "@types/aws-lambda": "^8.10.58",
     "@types/node": "^14.0.19",
     "eslint": "^6.6.0",
