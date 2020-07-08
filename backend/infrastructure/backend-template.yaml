@@ -19,7 +19,7 @@ Resources:
       Runtime: nodejs12.x
       CodeUri: ./../dist
       Timeout: 30
-      Handler: src/handlers/sqs-manager.processRequestToSQS
+      Handler: src/handlers/service-handler.handleServiceRequest
       FunctionName: aws-ai-services-function
       MemorySize: !Ref MemorySize
       AutoPublishAlias: live
@@ -53,8 +53,8 @@ Resources:
     Properties:
       Name: PR-Bot-Gateway
       Tags:
-        - Key: "Product"
-          Value: "PR-Bot"
+        - Key: "Application"
+          Value: "AWS-AI-Services"
 
   # Root Resource on Gateway
   AiResource:
