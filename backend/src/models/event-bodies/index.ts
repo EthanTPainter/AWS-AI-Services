@@ -1,0 +1,10 @@
+export { ComprehendBody } from "./comprehend-body";
+export { ComprehendMedicalBody } from "./comprehend-medical-body";
+export { LexBody } from "./lex-body";
+export { ForecastBody } from "./forecast-body";
+export { PersonalizeBody } from "./personalize-body";
+export { PollyBody } from "./polly-body";
+export { RekognitionBody } from "./rekognition-body";
+export { TextractBody } from "./textract-body";
+export { TranscribeBody } from "./transcribe-body";
+export { TranslateBody } from "./translate-body";
