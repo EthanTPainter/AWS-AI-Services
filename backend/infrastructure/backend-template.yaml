@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: GitHub PR Bot template
+Description: AWS AI Services backend template
 
 Parameters:
   MemorySize:
@@ -51,7 +51,7 @@ Resources:
   ApiGateway:
     Type: AWS::ApiGateway::RestApi
     Properties:
-      Name: PR-Bot-Gateway
+      Name: AWS-AI-Services-Gateway
       Tags:
         - Key: "Application"
           Value: "AWS-AI-Services"
