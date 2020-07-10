@@ -6,7 +6,6 @@ import { TITLES } from "../enums";
 
 import ComprehendServiceSvg from "../../assets/package-images/Comprehend.svg";
 import ForecastServiceSvg from "../../assets/package-images/Forecast.svg";
-import LexServiceSvg from "../../assets/package-images/Lex.svg";
 import PersonalizeServiceSvg from "../../assets/package-images/Personalize.svg";
 import PollyServiceSvg from "../../assets/package-images/Polly.svg";
 import RekognitionServiceSvg from "../../assets/package-images/Rekognition.svg";
@@ -23,9 +22,6 @@ export const ServiceBlock = (props: { name: string; history: any }) => {
 				return;
 			case TITLES.FORECAST:
 				history.push("/forecast");
-				return;
-			case TITLES.LEX:
-				history.push("/lex");
 				return;
 			case TITLES.POLLY:
 				history.push("/polly");
@@ -62,12 +58,6 @@ export const ServiceBlock = (props: { name: string; history: any }) => {
 					main: "var(--forecast-block-background-color)",
 					secondary: "var(--forecast-block-background-hover-color)",
 					hover: "var(--forecast-block-hover-shadow)",
-				};
-			case TITLES.LEX:
-				return {
-					main: "var(--lex-block-background-color)",
-					secondary: "var(--lex-block-background-hover-color)",
-					hover: "var(--lex-block-hover-shadow)",
 				};
 			case TITLES.PERSONALIZE:
 				return {
@@ -134,8 +124,6 @@ const renderServiceSvg = (name: string) => {
 			return <ComprehendServiceSvg />;
 		case TITLES.FORECAST:
 			return <ForecastServiceSvg />;
-		case TITLES.LEX:
-			return <LexServiceSvg />;
 		case TITLES.PERSONALIZE:
 			return <PersonalizeServiceSvg />;
 		case TITLES.POLLY:

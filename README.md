@@ -31,10 +31,6 @@ The AI services tested
 
 [Brief Overview](https://aws.amazon.com/comprehend/)
 
-## Lex
-
-[Brief Overview](https://aws.amazon.com/lex/)
-
 ## Forecast
 
 [Brief Overview](https://aws.amazon.com/forecast/)

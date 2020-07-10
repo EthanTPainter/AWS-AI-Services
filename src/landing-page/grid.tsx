@@ -23,10 +23,6 @@ export const ServiceGrid: FunctionComponent<ServiceGridProps> = ({
         <ServiceBlock name={TITLES.FORECAST} history={history} />
       </div>
 
-      <div css={LexStyle}>
-        <ServiceBlock name={TITLES.LEX} history={history} />
-      </div>
-
       <div css={PersonalizeStyle}>
         <ServiceBlock name={TITLES.PERSONALIZE} history={history} />
       </div>
@@ -62,9 +58,8 @@ export const ServiceGrid: FunctionComponent<ServiceGridProps> = ({
 const ServiceGridStyle = css`{
   display: grid;
   grid-template-areas:
-    "comp comp  fore    fore    le        le    personal  personal"
-    "pol  pol   rekog   rekog   tex       tex   transc    transc"
-    ".    .     .       transl  transl    .     .         .";
+    "comp     comp    fore    fore    personal  personal  pol       pol"
+    "rekog    rekog   tex     tex     transc    transc    transl    transl";
   margin: 3em 10em 2em 10em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -79,10 +74,6 @@ const ComprehendStyle = css`{
 
 const ForecastStyle = css`{
   grid-area: fore;
-}`;
-
-const LexStyle = css`{
-  grid-area: le;
 }`;
 
 const PersonalizeStyle = css`{
