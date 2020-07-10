@@ -16,10 +16,6 @@ export enum DESCRIPTIONS {
     "resources needed, or financial performance. By providing time series data, Forecast will predict the future " +
     "requirements or expectations based on past performance.",
 
-  LEX = "Lex is used for building conversational interfaces for any application relying on voice or text. " +
-    "Lex provides automatic speech recognition (ASR) with natural language understanding (NLU) to recognize text and " +
-    "and enable engaging user experiences with lifelike conversation.",
-
   PERSONALIZE = "Personalize is used to create individualized recommendations for customers using any applications. " +
     "This service allows developers with no prior machine learning (ML) experience to create easily sophisticated " +
     "personalization capabilities within their applications. Based on provided criteria, including clicks, page view, " +

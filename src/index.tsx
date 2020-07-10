@@ -6,7 +6,6 @@ import { App } from "./App";
 import { ComprehendLanding } from "./services/comprehend/landing-page";
 import { ComprehendResults } from "./services/comprehend/result-page";
 import { Forecast } from "./services/forecast";
-import { Lex } from "./services/lex";
 import { Personalize } from "./services/personalize";
 import { Polly } from "./services/polly";
 import { Rekognition } from "./services/rekognition";
@@ -21,7 +20,6 @@ const Routing: FunctionComponent = () => (
     <Route exact path="/comprehend" component={ComprehendLanding} />
     <Route exact path="/comprehend/results" component={ComprehendResults} />
     <Route exact path="/forecast" component={Forecast} />
-    <Route exact path="/lex" component={Lex} />
     <Route exact path="/personalize" component={Personalize} />
     <Route exact path="/polly" component={Polly} />
     <Route exact path="/rekognition" component={Rekognition} />

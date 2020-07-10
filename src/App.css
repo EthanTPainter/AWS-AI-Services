@@ -14,11 +14,6 @@
 	--forecast-block-background-hover-color: #ff8888;
 	--forecast-block-hover-shadow: 0 0 1em #ff8888;
 
-	/* Lex Service Block */
-	--lex-block-background-color: #f489ff;
-	--lex-block-background-hover-color: #f489ff;
-	--lex-block-hover-shadow: 0 0 1em #f489ff;
-
 	/* Personalize Service Block */
 	--personalize-block-background-color: #6fb8fa;
 	--personalize-block-background-hover-color: #6fb8fa;
@@ -100,15 +95,6 @@
 	);
 	--forecast-block-background-hover-color: #ff8888;
 	--forecast-block-hover-shadow: 0 0 1em #ff8888;
-
-	/* Lex Service Block */
-	--lex-block-background-color: linear-gradient(
-		360deg,
-		#45114a -23.6%,
-		#f489ff 151.6%
-	);
-	--lex-block-background-hover-color: #f489ff;
-	--lex-block-hover-shadow: 0 0 1em #f489ff;
 
 	/* Personalize Service Block */
 	--personalize-block-background-color: linear-gradient(
