@@ -17,7 +17,23 @@
     "inlineSources": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["dom", "es6", "es7", "esnext"],
-    "jsx": "react"
+    "lib": [
+      "dom",
+      "es6",
+      "es7",
+      "esnext"
+    ],
+    "jsx": "react",
   },
+  "include": [
+    "enums/*",
+    "src/**/*",
+    "assets/**/*",
+    "custom.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "backend"
+  ]
 }
