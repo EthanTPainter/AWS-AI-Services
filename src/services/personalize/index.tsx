@@ -1,1 +1,0 @@
-export { Personalize } from "./landing";

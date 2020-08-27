@@ -19,18 +19,6 @@ export const ServiceGrid: FunctionComponent<ServiceGridProps> = ({
         <ServiceBlock name={TITLES.COMPREHEND} history={history} />
       </div>
 
-      <div css={ForecastStyle}>
-        <ServiceBlock name={TITLES.FORECAST} history={history} />
-      </div>
-
-      <div css={PersonalizeStyle}>
-        <ServiceBlock name={TITLES.PERSONALIZE} history={history} />
-      </div>
-
-      <div css={PollyStyle}>
-        <ServiceBlock name={TITLES.POLLY} history={history} />
-      </div>
-
       <div css={RekognitionStyle}>
         <ServiceBlock name={TITLES.REKOGNITION} history={history} />
       </div>
@@ -58,8 +46,8 @@ export const ServiceGrid: FunctionComponent<ServiceGridProps> = ({
 const ServiceGridStyle = css`{
   display: grid;
   grid-template-areas:
-    "comp     comp    fore    fore    personal  personal  pol       pol"
-    "rekog    rekog   tex     tex     transc    transc    transl    transl";
+    "comp   comp    rekog    rekog    tex   tex  transc  transc"
+    ".      .       .   transl   transl     .    .       .";
   margin: 3em 10em 2em 10em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -70,18 +58,6 @@ const ServiceGridStyle = css`{
 */
 const ComprehendStyle = css`{
   grid-area: comp;
-}`;
-
-const ForecastStyle = css`{
-  grid-area: fore;
-}`;
-
-const PersonalizeStyle = css`{
-  grid-area: personal;
-}`;
-
-const PollyStyle = css`{
-  grid-area: pol;
 }`;
 
 const RekognitionStyle = css`{
