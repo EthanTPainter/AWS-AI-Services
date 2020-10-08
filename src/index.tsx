@@ -5,9 +5,6 @@ import { Route, HashRouter as Router } from "react-router-dom";
 import { App } from "./App";
 import { ComprehendLanding } from "./services/comprehend/landing-page";
 import { ComprehendResults } from "./services/comprehend/result-page";
-import { Forecast } from "./services/forecast";
-import { Personalize } from "./services/personalize";
-import { Polly } from "./services/polly";
 import { Rekognition } from "./services/rekognition";
 import { Textract } from "./services/textract";
 import { Transcribe } from "./services/transcribe";
@@ -19,9 +16,6 @@ const Routing: FunctionComponent = () => (
     <Route exact path="/" component={App} />
     <Route exact path="/comprehend" component={ComprehendLanding} />
     <Route exact path="/comprehend/results" component={ComprehendResults} />
-    <Route exact path="/forecast" component={Forecast} />
-    <Route exact path="/personalize" component={Personalize} />
-    <Route exact path="/polly" component={Polly} />
     <Route exact path="/rekognition" component={Rekognition} />
     <Route exact path="/textract" component={Textract} />
     <Route exact path="/transcribe" component={Transcribe} />
